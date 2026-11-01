@@ -1,0 +1,5 @@
+control,condition,both_success,control_only_success,condition_only_success,both_failure,paired_difference_pp,mcnemar_p_exact_two_sided,holm_p_four_comparisons
+C0_original,C1_paraphrase,96,1,1,2,0,1.0,1.0
+C0_original,C2_swap,0,97,0,3,-97,1.262177448353619e-29,5.048709793414476e-29
+C0_original,C3_empty,11,86,0,3,-86,2.5849394142282115e-26,5.169878828456423e-26
+C0_original,C4_unrelated,8,89,0,3,-89,3.2311742677852644e-27,9.693522803355793e-27

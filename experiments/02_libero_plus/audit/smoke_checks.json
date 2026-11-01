@@ -1,0 +1,8 @@
+{
+  "all_smoke_runs_completed": true,
+  "same_base_prompt": "open the middle drawer of the cabinet",
+  "camera_parameters_changed": true,
+  "light_parameters_changed": true,
+  "layout_has_additional_object_state": true,
+  "visual_inspection": "All three saved initial images inspected; dark lighting, changed viewpoint, and two added objects visible."
+}

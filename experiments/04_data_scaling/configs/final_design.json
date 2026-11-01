@@ -1,0 +1,16 @@
+{
+  "sizes": [5, 10, 20, 35, 50],
+  "training_seeds": [0, 1, 2],
+  "steps": 6000,
+  "batch_size": 8,
+  "gpu": "A10",
+  "timeout_seconds": 1200,
+  "max_parallel": 5,
+  "evaluation_episodes_per_model": 50,
+  "evaluation_seed_start": 10000,
+  "checkpoint_selection": "final checkpoint only",
+  "pilot_reference": "pilot_A10_n50_s777_k6000_20261030T223340Z",
+  "pilot_successes": {"2000": "10/20", "4000": "16/20", "6000": "19/20"},
+  "decision": "Freeze 6000 updates based on the independent 50-demo pilot. This supports a useful fixed-compute data-scaling comparison within the $15 credit constraint; it does not establish asymptotic convergence. Formal models are freshly initialized at seeds 0/1/2 and evaluated on separate seeds 10000-10049.",
+  "budget": "15 jobs reserve at most (1200+122) seconds each at $0.00039392/second: $7.8114336. Prior conservative charges about $2.25573. Total reserved GPU exposure about $10.0672, leaving room for CPU setup/storage/transfer within $15."
+}

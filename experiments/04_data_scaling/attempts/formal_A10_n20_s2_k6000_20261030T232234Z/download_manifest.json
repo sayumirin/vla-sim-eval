@@ -1,0 +1,26 @@
+[
+  {
+    "path": "train.log",
+    "bytes": 189629
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 15540
+  },
+  {
+    "path": "infrastructure_stop.json",
+    "bytes": 400
+  },
+  {
+    "path": "training_progress.jsonl",
+    "bytes": 5700
+  },
+  {
+    "path": "subset_audit.json",
+    "bytes": 382
+  },
+  {
+    "path": "packages.txt",
+    "bytes": 3484
+  }
+]

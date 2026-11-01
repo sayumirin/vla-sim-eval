@@ -1,0 +1,18 @@
+{
+  "task_id": 0,
+  "episode": 0,
+  "frame_indices": [
+    0,
+    40,
+    80,
+    120
+  ],
+  "selection": "First task and first episode; illustrative, not a representative performance estimate.",
+  "original_instruction": "open the middle drawer of the cabinet",
+  "swapped_instruction": "put the bowl on the stove",
+  "source_videos": [
+    "modal_results/C0_original_100_seed0_20261030T190322Z/videos/libero_goal_0/eval_episode_0.mp4",
+    "inspection/C2_task0_episode0.mp4"
+  ],
+  "limitation": "Replacement-task success is not evaluated; video frame times are not simulation wall-clock times."
+}

@@ -1,0 +1,23 @@
+# Raw run folders downloaded from Modal: videos, initial images, logs, checkpoints
+experiments/*/modal_results/
+experiments/*/audit_results/
+experiments/*/control_states/
+experiments/*/diagnostics/
+experiments/*/logs/
+experiments/*/eval_logs/
+experiments/*/outputs/
+*.mp4
+*.npz
+*.npy
+*.safetensors
+
+# Upstream clones used by the selection/prompt scripts
+experiments/02_libero_plus/LIBERO-plus/
+experiments/03_instruction_swap/LIBERO-PRO/
+
+__pycache__/
+*.pyc
+.venv/
+.cache/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,51 @@
+condition,task_id,task,n,successes,instruction
+C0_original,0,open_the_middle_drawer_of_the_cabinet,10,10,open the middle drawer of the cabinet
+C0_original,1,put_the_bowl_on_the_stove,10,10,put the bowl on the stove
+C0_original,2,put_the_wine_bottle_on_top_of_the_cabinet,10,8,put the wine bottle on top of the cabinet
+C0_original,3,open_the_top_drawer_and_put_the_bowl_inside,10,9,open the top drawer and put the bowl inside
+C0_original,4,put_the_bowl_on_top_of_the_cabinet,10,10,put the bowl on top of the cabinet
+C0_original,5,push_the_plate_to_the_front_of_the_stove,10,10,push the plate to the front of the stove
+C0_original,6,put_the_cream_cheese_in_the_bowl,10,10,put the cream cheese in the bowl
+C0_original,7,turn_on_the_stove,10,10,turn on the stove
+C0_original,8,put_the_bowl_on_the_plate,10,10,put the bowl on the plate
+C0_original,9,put_the_wine_bottle_on_the_rack,10,10,put the wine bottle on the rack
+C1_paraphrase,0,open_the_middle_drawer_of_the_cabinet,10,10,open the cabinet’s middle drawer
+C1_paraphrase,1,put_the_bowl_on_the_stove,10,10,place the bowl on the stove
+C1_paraphrase,2,put_the_wine_bottle_on_top_of_the_cabinet,10,9,place the wine bottle on top of the cabinet
+C1_paraphrase,3,open_the_top_drawer_and_put_the_bowl_inside,10,9,slide open the top drawer and place the bowl in it
+C1_paraphrase,4,put_the_bowl_on_top_of_the_cabinet,10,10,place the bowl on top of the cabinet
+C1_paraphrase,5,push_the_plate_to_the_front_of_the_stove,10,9,move the plate to the stove’s front
+C1_paraphrase,6,put_the_cream_cheese_in_the_bowl,10,10,place the cream cheese inside the bowl
+C1_paraphrase,7,turn_on_the_stove,10,10,switch on the stove
+C1_paraphrase,8,put_the_bowl_on_the_plate,10,10,place the bowl on top of the plate
+C1_paraphrase,9,put_the_wine_bottle_on_the_rack,10,10,place the wine bottle on the rack
+C2_swap,0,open_the_middle_drawer_of_the_cabinet,10,0,put the bowl on the stove
+C2_swap,1,put_the_bowl_on_the_stove,10,0,put the wine bottle on top of the cabinet
+C2_swap,2,put_the_wine_bottle_on_top_of_the_cabinet,10,0,open the top drawer and put the bowl inside
+C2_swap,3,open_the_top_drawer_and_put_the_bowl_inside,10,0,put the bowl on top of the cabinet
+C2_swap,4,put_the_bowl_on_top_of_the_cabinet,10,0,push the plate to the front of the stove
+C2_swap,5,push_the_plate_to_the_front_of_the_stove,10,0,put the cream cheese in the bowl
+C2_swap,6,put_the_cream_cheese_in_the_bowl,10,0,turn on the stove
+C2_swap,7,turn_on_the_stove,10,0,put the bowl on the plate
+C2_swap,8,put_the_bowl_on_the_plate,10,0,put the wine bottle on the rack
+C2_swap,9,put_the_wine_bottle_on_the_rack,10,0,open the middle drawer of the cabinet
+C3_empty,0,open_the_middle_drawer_of_the_cabinet,10,0,
+C3_empty,1,put_the_bowl_on_the_stove,10,3,
+C3_empty,2,put_the_wine_bottle_on_top_of_the_cabinet,10,0,
+C3_empty,3,open_the_top_drawer_and_put_the_bowl_inside,10,0,
+C3_empty,4,put_the_bowl_on_top_of_the_cabinet,10,0,
+C3_empty,5,push_the_plate_to_the_front_of_the_stove,10,0,
+C3_empty,6,put_the_cream_cheese_in_the_bowl,10,0,
+C3_empty,7,turn_on_the_stove,10,1,
+C3_empty,8,put_the_bowl_on_the_plate,10,7,
+C3_empty,9,put_the_wine_bottle_on_the_rack,10,0,
+C4_unrelated,0,open_the_middle_drawer_of_the_cabinet,10,0,The weather forecast predicts rain tomorrow.
+C4_unrelated,1,put_the_bowl_on_the_stove,10,1,The weather forecast predicts rain tomorrow.
+C4_unrelated,2,put_the_wine_bottle_on_top_of_the_cabinet,10,1,The weather forecast predicts rain tomorrow.
+C4_unrelated,3,open_the_top_drawer_and_put_the_bowl_inside,10,0,The weather forecast predicts rain tomorrow.
+C4_unrelated,4,put_the_bowl_on_top_of_the_cabinet,10,1,The weather forecast predicts rain tomorrow.
+C4_unrelated,5,push_the_plate_to_the_front_of_the_stove,10,0,The weather forecast predicts rain tomorrow.
+C4_unrelated,6,put_the_cream_cheese_in_the_bowl,10,1,The weather forecast predicts rain tomorrow.
+C4_unrelated,7,turn_on_the_stove,10,3,The weather forecast predicts rain tomorrow.
+C4_unrelated,8,put_the_bowl_on_the_plate,10,1,The weather forecast predicts rain tomorrow.
+C4_unrelated,9,put_the_wine_bottle_on_the_rack,10,0,The weather forecast predicts rain tomorrow.

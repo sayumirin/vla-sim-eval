@@ -1,0 +1,12 @@
+[
+  {
+    "label": "metadata_audit_setup_failure_n20_s2",
+    "gpu": "A10",
+    "timeout_seconds": 300,
+    "usd_per_second": 0.00039392,
+    "reserved_usd": 0.16623424,
+    "settled_estimate_usd": 0.16623424,
+    "state": "failed_before_evaluation_reservation_retained",
+    "reason": "Replacement launcher omitted optional checkpoint_relative metadata. Replay stopped before creating an output directory or loading the model. Full reservation retained; the remaining replay uses the verified absolute checkpoint path."
+  }
+]

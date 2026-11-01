@@ -1,0 +1,15 @@
+{
+  "primary_intervention_comparisons_and_statistics_fixed_before_formal_outcomes": true,
+  "conditions": ["C0_original", "C1_paraphrase", "C2_swap", "C3_empty", "C4_unrelated"],
+  "n_per_condition": 100,
+  "pair_key": ["task_id", "episode"],
+  "image_pair_tolerance": {"max_abs_channel_difference": 1, "max_fraction_different_channels": 0.001},
+  "image_tolerance_rationale": "Set before formal outcomes. Repeated no-policy reset probes had exactly matching physical and visual-model parameters, but 3-6 color channels out of 388800 differed by one intensity level. Preserve strict physical/scene checks and explicitly bound/report image rounding differences.",
+  "image_validation_amendment": "Before any formal C1/C2/C4 episode, full reset-only preflights showed rare two-level rendering differences (e.g. nine channels out of 388800 at task 3 episode 9). A declared validation-only wrapper permits max 2 intensity levels, retaining the 0.1% differing-channel cap. No observations/actions are changed. Existing C3 records passing the stricter cap remain valid. See validation_overrides.json and per-run metadata.",
+  "control_validation_amendment": "Adopted after observing one additional C0 failure and before any formal intervention outcome. The official and custom loops produced exactly identical actions/rewards/done tensors on a 195-step real-observation replay. Retain the original C0 without rerunning; require absolute baseline-rate difference <= 5 percentage points and exact McNemar p >= 0.05 as a compatibility screen, not as statistical proof of equivalence. Disclose all baseline discrepancies.",
+  "initialization_alignment_and_resume_amendment": "Reset probes measured cross-platform state tails of about 5.2e-18 with identical images and scene parameters. Verified C0 state vectors were reconstructed only when their exact hashes matched the original recorded C0 states. For subsequent runs, deviations <=1e-12 are aligned to those exact values while preserving cached observation/controller timing. Larger deviations abort. Keep the 39 completed C3 pairs and resume only the missing 61; retain all failed attempts separately, with no outcome-based replacement.",
+  "primary_comparisons": ["C0_original vs C2_swap", "C0_original vs C3_empty"],
+  "statistics": "95% Wilson intervals for each success rate; exact two-sided McNemar comparisons against C0 for all four interventions; Holm correction across all four comparisons.",
+  "scope": "Success is always measured against the ORIGINAL task goal. Alternative target success is not measured.",
+  "interpretation": "Lower original-task success after instruction intervention is evidence of language sensitivity, not by itself proof of successful obedience to the replacement instruction. Empty task text retains model template and state tokens. One fixed cyclic swap, one fixed paraphrase per task, one unrelated sentence, one run seed; no claims of general language understanding."
+}

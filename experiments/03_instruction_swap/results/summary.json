@@ -1,0 +1,167 @@
+{
+  "model_repo": "lerobot/pi05_libero_finetuned_v044",
+  "model_revision": "7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+  "seed": 0,
+  "n_episodes": 500,
+  "conditions": [
+    {
+      "condition": "C0_original",
+      "n": 100,
+      "successes": 97,
+      "success_percent": 97,
+      "ci95_low_percent": 91.54806357094724,
+      "ci95_high_percent": 98.97454759759611,
+      "drop_vs_control_pp": 0,
+      "wall_seconds": 1246.3053316740002
+    },
+    {
+      "condition": "C1_paraphrase",
+      "n": 100,
+      "successes": 97,
+      "success_percent": 97,
+      "ci95_low_percent": 91.54806357094724,
+      "ci95_high_percent": 98.97454759759611,
+      "drop_vs_control_pp": 0,
+      "wall_seconds": 1848.221731612
+    },
+    {
+      "condition": "C2_swap",
+      "n": 100,
+      "successes": 0,
+      "success_percent": 0,
+      "ci95_low_percent": 0.0,
+      "ci95_high_percent": 3.699349820698568,
+      "drop_vs_control_pp": 97,
+      "wall_seconds": 2366.229687751
+    },
+    {
+      "condition": "C3_empty",
+      "n": 100,
+      "successes": 11,
+      "success_percent": 11,
+      "ci95_low_percent": 6.254196357064568,
+      "ci95_high_percent": 18.631296503080314,
+      "drop_vs_control_pp": 86,
+      "wall_seconds": 3027.639032855
+    },
+    {
+      "condition": "C4_unrelated",
+      "n": 100,
+      "successes": 8,
+      "success_percent": 8,
+      "ci95_low_percent": 4.109346148438062,
+      "ci95_high_percent": 14.998107700948735,
+      "drop_vs_control_pp": 89,
+      "wall_seconds": 1841.750220704
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "control": "C0_original",
+      "condition": "C1_paraphrase",
+      "both_success": 96,
+      "control_only_success": 1,
+      "condition_only_success": 1,
+      "both_failure": 2,
+      "paired_difference_pp": 0,
+      "mcnemar_p_exact_two_sided": 1.0,
+      "holm_p_four_comparisons": 1.0
+    },
+    {
+      "control": "C0_original",
+      "condition": "C2_swap",
+      "both_success": 0,
+      "control_only_success": 97,
+      "condition_only_success": 0,
+      "both_failure": 3,
+      "paired_difference_pp": -97,
+      "mcnemar_p_exact_two_sided": 1.262177448353619e-29,
+      "holm_p_four_comparisons": 5.048709793414476e-29
+    },
+    {
+      "control": "C0_original",
+      "condition": "C3_empty",
+      "both_success": 11,
+      "control_only_success": 86,
+      "condition_only_success": 0,
+      "both_failure": 3,
+      "paired_difference_pp": -86,
+      "mcnemar_p_exact_two_sided": 2.5849394142282115e-26,
+      "holm_p_four_comparisons": 5.169878828456423e-26
+    },
+    {
+      "control": "C0_original",
+      "condition": "C4_unrelated",
+      "both_success": 8,
+      "control_only_success": 89,
+      "condition_only_success": 0,
+      "both_failure": 3,
+      "paired_difference_pp": -89,
+      "mcnemar_p_exact_two_sided": 3.2311742677852644e-27,
+      "holm_p_four_comparisons": 9.693522803355793e-27
+    }
+  ],
+  "limitations": [
+    "One run seed, ten tasks and ten fixed initial states per task. Related episodes may be correlated; Wilson and McNemar statistics do not model task-level clustering.",
+    "All success predicates refer to the original task. A failed original task does not prove the replacement task was completed.",
+    "One fixed cyclic swap, one published paraphrase per task, one unrelated sentence. These do not cover all possible language interventions.",
+    "Empty task text retains the model prompt template and proprioceptive state tokens; this is not a no-language-token ablation.",
+    "Changing task text also changes token sequence lengths and state-token positions. This experiment measures task-text sensitivity; it does not fully isolate semantic understanding from formatting effects.",
+    "Supplied states, settled states, visual-model parameters and initial CPU/CUDA RNG match exactly. First-image checks use each run's declared one- or two-level intensity tolerance in at most 0.1% of color channels. The two-level validation-only allowance was calibrated from reset-only probes; no images or actions were modified. Raw images and differences are saved.",
+    "Four exact two-sided McNemar tests are reported with Holm adjustment across all four. C2 and C3 were designated primary before formal outcomes.",
+    "C0 was retained even though individual outcomes can differ from stage one. A real-observation replay verified identical official/custom action tensors; compatibility validation and any baseline discrepancy are disclosed separately. No C0 reruns were selected for favorable outcomes.",
+    "Cross-platform floating-point reset tails are aligned to verified C0 state snapshots only when the maximum difference is <=1e-12. Cached observation/controller sampling timing is preserved. Source snapshots exactly match the hashes originally recorded by C0. Actual alignment sizes are recorded.",
+    "Interrupted C3 prefixes are retained and only missing pairs are resumed; source runs and the non-overlapping merge are recorded. No completed episode is replaced based on its outcome."
+  ],
+  "baseline_validation": {
+    "reference": "/data/results_rq2/C0_original_100_seed0_20261030T190322Z",
+    "accepted": true,
+    "runner_sha256": "34f111758d72aec97207b9b7eb5a39daf01a344be85b8a0cdbc2bee423fca298",
+    "config_sha256": "922c4cb1bc416660109fbd541b35274360a8731d6d5f750a1c0b55c42af70d60",
+    "stage_one_successes": 98,
+    "control_successes": 97,
+    "outcome_differences": [
+      [
+        2,
+        5
+      ]
+    ],
+    "stage_one_only_success": 1,
+    "control_only_success": 0,
+    "exact_mcnemar_p": 1.0,
+    "exact_episode_agreement": false,
+    "official_custom_loop_comparison": {
+      "task_id": 2,
+      "initial_state_index": 5,
+      "environment_seed": 5,
+      "steps": 195,
+      "exact_tensor_equality": {
+        "action": true,
+        "reward": true,
+        "success": true,
+        "done": true
+      },
+      "max_absolute_action_difference": 0.0,
+      "method": "Official loop records a real simulation trajectory; custom loop replays identical raw observations and transition results with the same trained policy, processors and restored initial CPU/CUDA RNG.",
+      "all_checks_passed": true
+    },
+    "validation_time_utc": "2026-10-30T19:25:04.812769+00:00",
+    "acceptance_rule": "Exact official/custom action-tensor equality on identical real observations; no more than five percentage points baseline difference; exact McNemar p >= 0.05. This is an engineering compatibility check, not statistical proof of equivalence.",
+    "amendment": "The original exact-outcome gate was stricter than reproducibility allowed by observed renderer/closed-loop variability. This compatibility rule was adopted after a C0 discrepancy and before any formal intervention outcome. The original 100-episode C0 is retained without rerunning to select better outcomes."
+  },
+  "all_400_intervention_pairs_verified": true,
+  "pairing_audit": {
+    "verified_control_state_vectors": 100,
+    "verified_initial_image_files": 500,
+    "max_applied_state_alignment_difference": 8.298917109073045e-15,
+    "max_initial_image_channel_difference": 2.0,
+    "max_initial_image_fraction_different_channels": 6.430041152263375e-05
+  },
+  "summed_formal_gpu_process_seconds": 10330.146004596,
+  "approx_formal_elapsed_seconds": 6253.229687690735,
+  "approx_parallel_overlap_seconds": 5537.246562400107,
+  "gaps_between_contributing_runs_seconds": 1460.3302454948425,
+  "timing_note": "Elapsed time includes diagnostic/setup gaps. Summed process time covers runs contributing formal records, excluding zero-episode failed attempts and separate diagnostics.",
+  "smoke_seconds": 798.947968261
+}

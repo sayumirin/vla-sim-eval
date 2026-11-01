@@ -1,0 +1,8 @@
+# Enough for `make check` and `make plots` (Python >= 3.10).
+numpy>=1.24
+matplotlib>=3.7
+
+# Only for scripts/make_gifs.py, which needs the raw rollout videos:
+#   opencv-python>=4.8  pillow>=10
+# Only for rerunning experiments on cloud GPUs:
+#   modal

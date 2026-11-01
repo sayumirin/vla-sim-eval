@@ -1,0 +1,8 @@
+# Keep LF everywhere so the source and config SHA-256 values recorded in the run manifests stay valid.
+* text=auto eol=lf
+# CSVs were written with CRLF by Python's csv module; keep their bytes exactly.
+*.csv -text
+*.png binary
+*.gif binary
+*.jpg binary
+*.pdf binary

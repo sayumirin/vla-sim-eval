@@ -1,0 +1,28 @@
+{
+  "unique_condition_task_episode_keys": 500,
+  "videos_checked": 500,
+  "all_video_frame_counts_match_recorded_steps": true,
+  "episodes_jsonl_sha256": "21f427f36b3f90ef03dec01b402ee426fd3c797826907ad8fddf8524f815d8af",
+  "per_condition": {
+    "C0_original": {
+      "videos": 100,
+      "total_action_steps": 11159
+    },
+    "C1_paraphrase": {
+      "videos": 100,
+      "total_action_steps": 11122
+    },
+    "C2_swap": {
+      "videos": 100,
+      "total_action_steps": 30000
+    },
+    "C3_empty": {
+      "videos": 100,
+      "total_action_steps": 27795
+    },
+    "C4_unrelated": {
+      "videos": 100,
+      "total_action_steps": 28668
+    }
+  }
+}

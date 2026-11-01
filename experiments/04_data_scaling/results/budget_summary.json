@@ -1,0 +1,7 @@
+{
+  "user_credit_usd": 15,
+  "conservative_resource_estimate_usd": 9.397586972621347,
+  "formal_estimate_usd": 5.0891973964347255,
+  "audit_estimate_usd": 2.052660416167711,
+  "note": "Resource estimate including startup allowances and retained cancelled reservations; not a billing statement. CPU build, storage and transfer use separate headroom."
+}

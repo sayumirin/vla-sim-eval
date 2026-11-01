@@ -1,0 +1,24 @@
+{
+  "frozen_design_preserved": "Demonstration subsets, training seeds, batch size, 6000 updates, final-checkpoint selection, and evaluation seed bank are unchanged.",
+  "metadata_replay": {
+    "reason": "Original qpos logging was overwritten by unseeded SAME_STEP autoresets after an episode ended.",
+    "change": "Record qpos only at explicitly seeded resets, then replay each final checkpoint on the same 50 cases and compare outcomes.",
+    "independent_sample_count_added": 0,
+    "replay_variation_handling": "Exact repeatability was not achieved in every case. Preserve the first formal evaluation as primary; report all replay differences separately. Reconstructed initial poses are labelled as replay-derived, not original observations.",
+    "review": "The upstream evaluator enables cuDNN benchmark; strict determinism was not enforced. The exact numerical source of observed differences has not been fully isolated. No further outcome-dependent reruns are performed."
+  },
+  "infrastructure_replacement": {
+    "n_demonstrations": 20,
+    "train_seed": 2,
+    "original_run": "formal_A10_n20_s2_k6000_20261030T232234Z",
+    "replacement_run": "formal_A10_n20_s2_k6000_20261030T233133Z",
+    "reason": "Measured update speed near 0.20 seconds rather than 0.09 seconds projected to exceed the original hard runtime limit.",
+    "last_logged_step_before_stop": 2400,
+    "any_evaluation_before_stop": false,
+    "original_timeout_seconds": 1200,
+    "replacement_timeout_seconds": 1800,
+    "restart": "Fresh initialization with identical seed and unchanged training/evaluation settings; no model was selected using outcome scores.",
+    "original_logs": "attempts/formal_A10_n20_s2_k6000_20261030T232234Z/"
+  },
+  "concurrency": "Original training: up to 5 GPUs. Recovery: 1 replacement training GPU plus up to 4 metadata-audit GPUs."
+}

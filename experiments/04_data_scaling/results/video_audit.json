@@ -1,0 +1,389 @@
+{
+  "partial": false,
+  "videos_checked": 60,
+  "all_frame_counts_match": true,
+  "first_frames": {
+    "modal_results/episode_0": {
+      "videos": 15,
+      "max_mean_absolute_pixel_difference": 0.37118272569444444,
+      "note": "Lossy encoded first-frame comparison is descriptive; exact pairing uses seeded initial qpos."
+    },
+    "modal_results/episode_1": {
+      "videos": 15,
+      "max_mean_absolute_pixel_difference": 0.39007161458333334,
+      "note": "Lossy encoded first-frame comparison is descriptive; exact pairing uses seeded initial qpos."
+    },
+    "audit_results/episode_0": {
+      "videos": 15,
+      "max_mean_absolute_pixel_difference": 0.37118272569444444,
+      "note": "Lossy encoded first-frame comparison is descriptive; exact pairing uses seeded initial qpos."
+    },
+    "audit_results/episode_1": {
+      "videos": 15,
+      "max_mean_absolute_pixel_difference": 0.39007161458333334,
+      "note": "Lossy encoded first-frame comparison is descriptive; exact pairing uses seeded initial qpos."
+    }
+  },
+  "videos": [
+    {
+      "path": "modal_results\\formal_A10_n10_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "24f5096b078d106b8d48b864860a65c59ff1fd75fb83b379b48671d7298dd930"
+    },
+    {
+      "path": "modal_results\\formal_A10_n10_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 282,
+      "success": true,
+      "sha256": "3779b998e2d2139b7fd728c6fd94d9f0930bcd5772c2327a0f1cfdf01b518d85"
+    },
+    {
+      "path": "modal_results\\formal_A10_n10_s1_k6000_20261030T231100Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "14eeac766542c165ebb6f1d55325f319801b9270ba296737c9334c3c56becb9c"
+    },
+    {
+      "path": "modal_results\\formal_A10_n10_s1_k6000_20261030T231100Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "630d79561900a7e60f255a56addc933d2d59489e030771ceb00736a6024b1a18"
+    },
+    {
+      "path": "modal_results\\formal_A10_n10_s2_k6000_20261030T232233Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "8e940f4d8d5c9f25d96ce0ece24ae8eac9adfc42717db208059b59afd38ccbe3"
+    },
+    {
+      "path": "modal_results\\formal_A10_n10_s2_k6000_20261030T232233Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "1976ff5b474fe681a16968bcd22156e95a9614f47ed99306c298463b67c69588"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 227,
+      "success": true,
+      "sha256": "c6a0c66bebd1e92d63e8e852f14049c2deeec41feb255b306a9beaaebb3ff2a9"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 228,
+      "success": true,
+      "sha256": "a6cc96bf22ca2b417b2b3bb50a1e1749151710943d0f1e89a048c2419341e7c4"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s1_k6000_20261030T231101Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 215,
+      "success": true,
+      "sha256": "89e838b8fcc29c4942a70d6b6844370744bd6b428fd6a779ac69bbe2f925fed9"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s1_k6000_20261030T231101Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 221,
+      "success": true,
+      "sha256": "8cb26e08bfc4eeea7c3d2f2933967c3aa0c4d5561ac3b9fe7ec3b8beb02c67a7"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s2_k6000_20261030T233133Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 213,
+      "success": true,
+      "sha256": "5988ec273866c300081e205f72665c313ad020c7b8f684621dffe6d5b4d0b54a"
+    },
+    {
+      "path": "modal_results\\formal_A10_n20_s2_k6000_20261030T233133Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 220,
+      "success": true,
+      "sha256": "fc7388360c1f56757cbf680a25363a1a3e7aef5895f0239a0dfbb0135eae7676"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 215,
+      "success": true,
+      "sha256": "b71676c618cbdffe40a298ac8ca9a5368fcc29e9603b91a61aca7222446fbdb6"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 209,
+      "success": true,
+      "sha256": "2600c14ea60f7ed3143e1adca0eb24573ed865173753bff122a33b698ab5e99d"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s1_k6000_20261030T231102Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 235,
+      "success": true,
+      "sha256": "f90520d5bdef3a617918bb502dcb4b952098a8a6a7b00a2bdf891b03a4f71699"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s1_k6000_20261030T231102Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 234,
+      "success": true,
+      "sha256": "6dbbd27aa6e8187c7100ec45cbb175eff9bf1e6ed46b7ef7d3b1e4a90fe9591e"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s2_k6000_20261030T232307Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 213,
+      "success": true,
+      "sha256": "7e088f616e886e455e5631cf55464458d38c9dfc9b6ff0961178b0e160e7c77e"
+    },
+    {
+      "path": "modal_results\\formal_A10_n35_s2_k6000_20261030T232307Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 218,
+      "success": true,
+      "sha256": "62018330f0d35e25f3a1fd8ed4e58edc48526d61d97f56b5171c3e0c740ca4c8"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 229,
+      "success": true,
+      "sha256": "bb8986da1909d161551b1f718842957288a5f42f6eda7fd299bc805fa650b60a"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 223,
+      "success": true,
+      "sha256": "d3e0199f26ef70f93ea92d46296765f5a2652161ba3e3d4e548ecf90d354adb9"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s1_k6000_20261030T231118Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 217,
+      "success": true,
+      "sha256": "a5f0f9bc1fe13546be9e7e660f0763bba3d920a5cc505544c83b550e514c9e07"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s1_k6000_20261030T231118Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "824bf78d46836324e524006ee2c4e4bc9c4fbc33242425e0efa42817365fb154"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s2_k6000_20261030T232338Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 224,
+      "success": true,
+      "sha256": "1a941cce853fcac3d15674e2b8053fe5004dbf9e64d846c9636f043be8ac955c"
+    },
+    {
+      "path": "modal_results\\formal_A10_n50_s2_k6000_20261030T232338Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 209,
+      "success": true,
+      "sha256": "5435d81bc883ed84124e64ea542452d97e6afc6dce805cdd427c801af5c54aee"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "3fcc12defc671b8335abd32489078b0632c49bdfaa462275c768465683d359ba"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "6f1b7661adaeded110a0f2407ce5d4c9a532e41de7a359a0a6f97226c1d29680"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s1_k6000_20261030T231052Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "713d3ab5e43cc09278cfe6cb22673a2e51eccce2d94233b587a6a965a855047a"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s1_k6000_20261030T231052Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "6b1ac15d01bbb6fabc838f82a7415ca58a05d1fdab3e6b82f93d6ce205423ee1"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s2_k6000_20261030T232231Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "a0e450c80644b1c50c7bfad655d7465f8132d566eafdc37a9c05e237086b252d"
+    },
+    {
+      "path": "modal_results\\formal_A10_n5_s2_k6000_20261030T232231Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "67e527b40b9b951e54ec087a9c475f2275aa2049cd07e9b072eed9b1d5543f0f"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "24f5096b078d106b8d48b864860a65c59ff1fd75fb83b379b48671d7298dd930"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 282,
+      "success": true,
+      "sha256": "3779b998e2d2139b7fd728c6fd94d9f0930bcd5772c2327a0f1cfdf01b518d85"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s1_k6000_20261030T231100Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "14eeac766542c165ebb6f1d55325f319801b9270ba296737c9334c3c56becb9c"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s1_k6000_20261030T231100Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "630d79561900a7e60f255a56addc933d2d59489e030771ceb00736a6024b1a18"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s2_k6000_20261030T232233Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "8e940f4d8d5c9f25d96ce0ece24ae8eac9adfc42717db208059b59afd38ccbe3"
+    },
+    {
+      "path": "audit_results\\formal_A10_n10_s2_k6000_20261030T232233Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "1976ff5b474fe681a16968bcd22156e95a9614f47ed99306c298463b67c69588"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 227,
+      "success": true,
+      "sha256": "c6a0c66bebd1e92d63e8e852f14049c2deeec41feb255b306a9beaaebb3ff2a9"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 228,
+      "success": true,
+      "sha256": "a6cc96bf22ca2b417b2b3bb50a1e1749151710943d0f1e89a048c2419341e7c4"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s1_k6000_20261030T231101Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 215,
+      "success": true,
+      "sha256": "ce078bb449a3ab2e44286818a7ed2bcea6c7ab9cde432f56dd788465e23ebb35"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s1_k6000_20261030T231101Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 221,
+      "success": true,
+      "sha256": "5adf7400282105b39bb1dda9673f45dcf31210f5646544c4941c863d59a90960"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s2_k6000_20261030T233133Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 213,
+      "success": true,
+      "sha256": "5988ec273866c300081e205f72665c313ad020c7b8f684621dffe6d5b4d0b54a"
+    },
+    {
+      "path": "audit_results\\formal_A10_n20_s2_k6000_20261030T233133Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 220,
+      "success": true,
+      "sha256": "fc7388360c1f56757cbf680a25363a1a3e7aef5895f0239a0dfbb0135eae7676"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 216,
+      "success": true,
+      "sha256": "f876b24ca7638002b1181f29b756bbd915f99a5a1b5e29d51ef45ef89e6b5ff3"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 210,
+      "success": true,
+      "sha256": "1b474f2366c6d8a634cdace0142e32ead46310c1d75f626d75f46b57ca9a285b"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s1_k6000_20261030T231102Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 235,
+      "success": true,
+      "sha256": "f90520d5bdef3a617918bb502dcb4b952098a8a6a7b00a2bdf891b03a4f71699"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s1_k6000_20261030T231102Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 234,
+      "success": true,
+      "sha256": "6dbbd27aa6e8187c7100ec45cbb175eff9bf1e6ed46b7ef7d3b1e4a90fe9591e"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s2_k6000_20261030T232307Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 213,
+      "success": true,
+      "sha256": "7e088f616e886e455e5631cf55464458d38c9dfc9b6ff0961178b0e160e7c77e"
+    },
+    {
+      "path": "audit_results\\formal_A10_n35_s2_k6000_20261030T232307Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 218,
+      "success": true,
+      "sha256": "62018330f0d35e25f3a1fd8ed4e58edc48526d61d97f56b5171c3e0c740ca4c8"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 229,
+      "success": true,
+      "sha256": "f13de3fdf5080289a0935fa6f9527db0d3a2f84031cea628ac4370e0c3c2decd"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s0_k6000_20261030T225934Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 223,
+      "success": true,
+      "sha256": "d3e0199f26ef70f93ea92d46296765f5a2652161ba3e3d4e548ecf90d354adb9"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s1_k6000_20261030T231118Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 217,
+      "success": true,
+      "sha256": "a5f0f9bc1fe13546be9e7e660f0763bba3d920a5cc505544c83b550e514c9e07"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s1_k6000_20261030T231118Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "824bf78d46836324e524006ee2c4e4bc9c4fbc33242425e0efa42817365fb154"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s2_k6000_20261030T232338Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 224,
+      "success": true,
+      "sha256": "1a941cce853fcac3d15674e2b8053fe5004dbf9e64d846c9636f043be8ac955c"
+    },
+    {
+      "path": "audit_results\\formal_A10_n50_s2_k6000_20261030T232338Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 209,
+      "success": true,
+      "sha256": "5435d81bc883ed84124e64ea542452d97e6afc6dce805cdd427c801af5c54aee"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "3fcc12defc671b8335abd32489078b0632c49bdfaa462275c768465683d359ba"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s0_k6000_20261030T225933Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "6f1b7661adaeded110a0f2407ce5d4c9a532e41de7a359a0a6f97226c1d29680"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s1_k6000_20261030T231052Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "713d3ab5e43cc09278cfe6cb22673a2e51eccce2d94233b587a6a965a855047a"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s1_k6000_20261030T231052Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "6b1ac15d01bbb6fabc838f82a7415ca58a05d1fdab3e6b82f93d6ce205423ee1"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s2_k6000_20261030T232231Z\\eval\\videos\\aloha_0\\eval_episode_0.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "a0e450c80644b1c50c7bfad655d7465f8132d566eafdc37a9c05e237086b252d"
+    },
+    {
+      "path": "audit_results\\formal_A10_n5_s2_k6000_20261030T232231Z\\eval\\videos\\aloha_0\\eval_episode_1.mp4",
+      "frames": 400,
+      "success": false,
+      "sha256": "67e527b40b9b951e54ec087a9c475f2275aa2049cd07e9b072eed9b1d5543f0f"
+    }
+  ]
+}

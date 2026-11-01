@@ -1,0 +1,1149 @@
+{
+  "model_repo": "lerobot/pi05_libero_finetuned_v044",
+  "model_revision": "7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+  "model_path": "/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/models--lerobot--pi05_libero_finetuned_v044/snapshots/7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "assets_path": "/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/datasets--lerobot--libero-assets/snapshots/0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+  "assets_revision": "0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+  "condition": "C2_swap",
+  "smoke": false,
+  "seed": 0,
+  "config": {
+    "protocol_version": 2,
+    "suite": "libero_goal",
+    "seed": 0,
+    "episodes_per_task": 10,
+    "conditions": [
+      "C0_original",
+      "C1_paraphrase",
+      "C2_swap",
+      "C3_empty",
+      "C4_unrelated"
+    ],
+    "model_repo": "lerobot/pi05_libero_finetuned_v044",
+    "model_revision": "7152f13e34c6c115d808aea0e5d08aca74eac14b",
+    "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+    "paraphrase_source": {
+      "source_repo": "https://github.com/Zxy-MLlab/LIBERO-PRO",
+      "source_revision": "eafdb809426b13153aa1e4c42d6601844217dfec",
+      "source_file": "libero_ood/ood_language.yaml",
+      "source_sha256": "b06a52bd25860b401114d4c8bff93e7f0747379813c1aa2c11aa0904cd890c8f",
+      "selection_rule": "First published paraphrase per original task, fixed before evaluation.",
+      "paraphrases": {
+        "open_the_middle_drawer_of_the_cabinet": "open the cabinet\u2019s middle drawer",
+        "put_the_cream_cheese_in_the_bowl": "place the cream cheese inside the bowl",
+        "open_the_top_drawer_and_put_the_bowl_inside": "slide open the top drawer and place the bowl in it",
+        "put_the_wine_bottle_on_the_rack": "place the wine bottle on the rack",
+        "push_the_plate_to_the_front_of_the_stove": "move the plate to the stove\u2019s front",
+        "put_the_wine_bottle_on_top_of_the_cabinet": "place the wine bottle on top of the cabinet",
+        "put_the_bowl_on_the_plate": "place the bowl on top of the plate",
+        "put_the_bowl_on_the_stove": "place the bowl on the stove",
+        "turn_on_the_stove": "switch on the stove",
+        "put_the_bowl_on_top_of_the_cabinet": "place the bowl on top of the cabinet"
+      },
+      "all_candidates": {
+        "open_the_middle_drawer_of_the_cabinet": [
+          "open the cabinet\u2019s middle drawer",
+          "pull the middle drawer of the cabinet",
+          "slide out the middle drawer"
+        ],
+        "put_the_cream_cheese_in_the_bowl": [
+          "place the cream cheese inside the bowl",
+          "put the cream cheese into the bowl",
+          "drop the cream cheese in the bowl"
+        ],
+        "open_the_top_drawer_and_put_the_bowl_inside": [
+          "slide open the top drawer and place the bowl in it",
+          "put the bowl inside the top drawer after opening it",
+          "open the cabinet\u2019s top drawer and insert the bowl"
+        ],
+        "put_the_wine_bottle_on_the_rack": [
+          "place the wine bottle on the rack",
+          "put the wine bottle onto the rack",
+          "set the wine bottle down on the rack"
+        ],
+        "push_the_plate_to_the_front_of_the_stove": [
+          "move the plate to the stove\u2019s front",
+          "push the plate forward to the stove",
+          "slide the plate toward the front of the stove"
+        ],
+        "put_the_wine_bottle_on_top_of_the_cabinet": [
+          "place the wine bottle on top of the cabinet",
+          "put the wine bottle above the cabinet",
+          "set the wine bottle on the cabinet top"
+        ],
+        "put_the_bowl_on_the_plate": [
+          "place the bowl on top of the plate",
+          "put the bowl onto the plate",
+          "set the bowl down on the plate"
+        ],
+        "put_the_bowl_on_the_stove": [
+          "place the bowl on the stove",
+          "put the bowl onto the stove",
+          "set the bowl down on the stove"
+        ],
+        "turn_on_the_stove": [
+          "switch on the stove",
+          "turn the stove on",
+          "ignite the stove"
+        ],
+        "put_the_bowl_on_top_of_the_cabinet": [
+          "place the bowl on top of the cabinet",
+          "put the bowl above the cabinet",
+          "set the bowl down on the cabinet top"
+        ]
+      }
+    },
+    "tasks": [
+      {
+        "task_id": 0,
+        "name": "open_the_middle_drawer_of_the_cabinet",
+        "swap_target_task_id": 1,
+        "swap_target_name": "put_the_bowl_on_the_stove",
+        "instructions": {
+          "C0_original": "open the middle drawer of the cabinet",
+          "C1_paraphrase": "open the cabinet\u2019s middle drawer",
+          "C2_swap": "put the bowl on the stove",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 1,
+        "name": "put_the_bowl_on_the_stove",
+        "swap_target_task_id": 2,
+        "swap_target_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "instructions": {
+          "C0_original": "put the bowl on the stove",
+          "C1_paraphrase": "place the bowl on the stove",
+          "C2_swap": "put the wine bottle on top of the cabinet",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 2,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "swap_target_task_id": 3,
+        "swap_target_name": "open_the_top_drawer_and_put_the_bowl_inside",
+        "instructions": {
+          "C0_original": "put the wine bottle on top of the cabinet",
+          "C1_paraphrase": "place the wine bottle on top of the cabinet",
+          "C2_swap": "open the top drawer and put the bowl inside",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 3,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside",
+        "swap_target_task_id": 4,
+        "swap_target_name": "put_the_bowl_on_top_of_the_cabinet",
+        "instructions": {
+          "C0_original": "open the top drawer and put the bowl inside",
+          "C1_paraphrase": "slide open the top drawer and place the bowl in it",
+          "C2_swap": "put the bowl on top of the cabinet",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 4,
+        "name": "put_the_bowl_on_top_of_the_cabinet",
+        "swap_target_task_id": 5,
+        "swap_target_name": "push_the_plate_to_the_front_of_the_stove",
+        "instructions": {
+          "C0_original": "put the bowl on top of the cabinet",
+          "C1_paraphrase": "place the bowl on top of the cabinet",
+          "C2_swap": "push the plate to the front of the stove",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 5,
+        "name": "push_the_plate_to_the_front_of_the_stove",
+        "swap_target_task_id": 6,
+        "swap_target_name": "put_the_cream_cheese_in_the_bowl",
+        "instructions": {
+          "C0_original": "push the plate to the front of the stove",
+          "C1_paraphrase": "move the plate to the stove\u2019s front",
+          "C2_swap": "put the cream cheese in the bowl",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 6,
+        "name": "put_the_cream_cheese_in_the_bowl",
+        "swap_target_task_id": 7,
+        "swap_target_name": "turn_on_the_stove",
+        "instructions": {
+          "C0_original": "put the cream cheese in the bowl",
+          "C1_paraphrase": "place the cream cheese inside the bowl",
+          "C2_swap": "turn on the stove",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 7,
+        "name": "turn_on_the_stove",
+        "swap_target_task_id": 8,
+        "swap_target_name": "put_the_bowl_on_the_plate",
+        "instructions": {
+          "C0_original": "turn on the stove",
+          "C1_paraphrase": "switch on the stove",
+          "C2_swap": "put the bowl on the plate",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 8,
+        "name": "put_the_bowl_on_the_plate",
+        "swap_target_task_id": 9,
+        "swap_target_name": "put_the_wine_bottle_on_the_rack",
+        "instructions": {
+          "C0_original": "put the bowl on the plate",
+          "C1_paraphrase": "place the bowl on top of the plate",
+          "C2_swap": "put the wine bottle on the rack",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      },
+      {
+        "task_id": 9,
+        "name": "put_the_wine_bottle_on_the_rack",
+        "swap_target_task_id": 0,
+        "swap_target_name": "open_the_middle_drawer_of_the_cabinet",
+        "instructions": {
+          "C0_original": "put the wine bottle on the rack",
+          "C1_paraphrase": "place the wine bottle on the rack",
+          "C2_swap": "open the middle drawer of the cabinet",
+          "C3_empty": "",
+          "C4_unrelated": "The weather forecast predicts rain tomorrow."
+        }
+      }
+    ],
+    "pairing": "Exact supplied and settled simulator states and visual-model parameters; initial images checked within fixed rounding tolerance; restore C0 per-episode CPU/CUDA torch RNG states.",
+    "image_pair_tolerance": {
+      "max_abs_channel_difference": 1,
+      "max_fraction_different_channels": 0.001
+    },
+    "empty_instruction_definition": "Empty task text; keep PI05 fixed template and proprioceptive state tokens."
+  },
+  "config_sha256": "922c4cb1bc416660109fbd541b35274360a8731d6d5f750a1c0b55c42af70d60",
+  "runner_sha256": "34f111758d72aec97207b9b7eb5a39daf01a344be85b8a0cdbc2bee423fca298",
+  "reference": "/data/results_rq2/C0_original_100_seed0_20261030T190322Z",
+  "output": "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z",
+  "status": "completed",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "max_seconds": 3600,
+  "cloud": "CLOUD_PROVIDER_AWS",
+  "region": "us-east",
+  "requested_region": null,
+  "state_cache": "/data/rq2/control_states/C0_original_100_seed0_20261030T190322Z",
+  "resume_source": "",
+  "resume_offsets": {},
+  "expected_episodes_this_run": 100,
+  "validation_overrides": {
+    "scope": "initial_state_alignment_and_validation",
+    "max_initial_state_alignment_difference": 1e-12,
+    "state_alignment_rationale": "Cross-platform reset probes differed only by floating-point tails (observed max 5.204170427930421e-18) with identical images and visual parameters. Restore only such tiny deviations to exact C0 post-settling state vectors, whose hashes were verified against the original recorded C0 hashes. Larger deviations abort. No model weights, policy action calculations, task goals or post-initialization actions are changed.",
+    "image_pair_tolerance": {
+      "max_abs_channel_difference": 2,
+      "max_fraction_different_channels": 0.001
+    },
+    "rationale": "Full reset-only preflights, before any formal C1/C2/C4 episode, found up to two intensity levels of GPU rendering difference despite exact supplied/settled states and exact visual-model parameters. Example: task 3 episode 9, wrist camera, nine differing color channels out of 388800, mean absolute difference 0.0000308642. The original one-level cap was too strict. No images, policy inputs, actions or success predicates are modified.",
+    "retained_records": "C0 and the running C3 use the original implementation; C3 records that pass its stricter one-level cap also satisfy this bound. All per-run thresholds and actual differences are retained."
+  },
+  "validation_wrapper_sha256": "3976b9c5f6ea6afd9aa00cc795feffea7614f3a743d9f06227ad66e91a44469f",
+  "command": [
+    "/usr/local/bin/python",
+    "/opt/rq2/audited_runner.py",
+    "--policy.path=/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/models--lerobot--pi05_libero_finetuned_v044/snapshots/7152f13e34c6c115d808aea0e5d08aca74eac14b",
+    "--policy.device=cuda",
+    "--policy.dtype=bfloat16",
+    "--policy.compile_model=false",
+    "--policy.n_action_steps=10",
+    "--env.type=libero",
+    "--env.task=libero_goal",
+    "--env.control_mode=relative",
+    "--env.init_states=true",
+    "--env.hard_reset=true",
+    "--env.max_parallel_tasks=1",
+    "--eval.batch_size=1",
+    "--eval.n_episodes=10",
+    "--seed=0",
+    "--output_dir=/data/results_rq2/C2_swap_100_seed0_20261030T200809Z"
+  ],
+  "preflight_exit_code": 0,
+  "preflight": {
+    "verified_pairs": 100,
+    "expected_pairs": 100,
+    "cloud": "CLOUD_PROVIDER_AWS",
+    "region": "us-east"
+  },
+  "exit_code": 0,
+  "results": {
+    "per_task": [
+      {
+        "task_group": "libero_goal",
+        "task_id": 0,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 1,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 3,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 4,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 5,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 6,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 7,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 8,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 9,
+        "metrics": {
+          "sum_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max_rewards": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "successes": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "video_paths": [
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_0.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_1.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_2.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_3.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_4.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_5.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_6.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_7.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_8.mp4",
+            "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_9.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 10,
+        "n_success": 0,
+        "pc_success": 0.0,
+        "pc_success_ci95": [
+          2.7755575615628914e-15,
+          27.753279986288916
+        ]
+      }
+    ],
+    "per_group": {
+      "libero_goal": {
+        "avg_sum_reward": 0.0,
+        "avg_max_reward": 0.0,
+        "pc_success": 0.0,
+        "n_episodes": 100,
+        "n_success": 0,
+        "pc_success_ci95": [
+          0.0,
+          3.6993498206985658
+        ],
+        "video_paths": [
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_9.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_0.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_1.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_2.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_3.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_4.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_5.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_6.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_7.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_8.mp4",
+          "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_9.mp4"
+        ],
+        "predicted_video_paths": []
+      }
+    },
+    "overall": {
+      "avg_sum_reward": 0.0,
+      "avg_max_reward": 0.0,
+      "pc_success": 0.0,
+      "n_episodes": 100,
+      "n_success": 0,
+      "pc_success_ci95": [
+        0.0,
+        3.6993498206985658
+      ],
+      "eval_s": 2006.1547360420227,
+      "eval_ep_s": 20.0615473651886,
+      "video_paths": [
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_9.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_0.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_1.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_2.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_3.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_4.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_5.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_6.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_7.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_8.mp4",
+        "/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_9.mp4"
+      ],
+      "predicted_video_paths": []
+    }
+  },
+  "log_tail": "35 bot_eval.py:859 \nAggregated Metrics for overall:\nINFO 2026-10-30 20:47:35 bot_eval.py:860 {'avg_sum_reward': 0.0, 'avg_max_reward': 0.0, 'pc_success': 0.0, 'n_episodes': 100, 'n_success': 0, 'pc_success_ci95': [0.0, 3.6993498206985658], 'eval_s': 2006.1547360420227, 'eval_ep_s': 20.0615473651886, 'video_paths': ['/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_0/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_1/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_2/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_3/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_4/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_5/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_6/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_7/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_8/eval_episode_9.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_0.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_1.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_2.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_3.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_4.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_5.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_6.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_7.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_8.mp4', '/data/results_rq2/C2_swap_100_seed0_20261030T200809Z/videos/libero_goal_9/eval_episode_9.mp4'], 'predicted_video_paths': []}\nINFO 2026-10-30 20:47:35 bot_eval.py:868 End of eval\n",
+  "wall_seconds": 2366.229687751
+}

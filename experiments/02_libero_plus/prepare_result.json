@@ -1,0 +1,26 @@
+{
+  "assets": {
+    "repo": "Sylvest/LIBERO-plus",
+    "revision": "dd2bd61b7d9a6fef1abc52d606e983b41886a149",
+    "archive_sha256": "96764a4bfbdaea98d4411598caeab235458318fe0f549611b93d1a323027b3cf",
+    "extracted_files": 23870,
+    "selection": "all shared assets plus complete selected custom-object subtrees",
+    "custom_object_prefixes": [
+      "new_objects/bag_of_yeast/ibvtik/",
+      "new_objects/bottle_of_alfredo_sauce/xwzqjr/",
+      "new_objects/bottle_of_antihistamines/agavwx/",
+      "new_objects/bottle_of_aspirin/psvktc/",
+      "new_objects/bottle_of_baby_oil/xpdlrr/",
+      "new_objects/bottle_of_barbecue_sauce/nkqvex/",
+      "new_objects/box_of_shampoo/bclpiq/",
+      "new_objects/box_of_vegetable_juice/jsnnlv/",
+      "new_objects/box_of_yogurt/jkemqc/",
+      "new_objects/boxed_ink_cartridge/oinelo/",
+      "new_objects/can_of_sardines/dpgmry/",
+      "new_objects/can_of_soda/bfrzvk/",
+      "new_objects/canned_food/acgdtc/"
+    ]
+  },
+  "validated_variants": 300,
+  "libero_plus_commit": "4976dc30028e805ff8094b55501d532c48fec182"
+}

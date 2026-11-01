@@ -1,0 +1,27 @@
+Knightec VLA — Stage 1: LIBERO-Goal baseline
+
+Model: lerobot/pi05_libero_finetuned_v044
+Success: 98/100 (98.0%)
+95% Wilson interval: 93.00% to 99.45%
+Official Goal reference: 98.0%; difference: +0.0 percentage points
+Evaluation time: 1038.8 seconds; 10.39 seconds/episode
+Runtime including model loading: 1221.1 seconds
+GPU: NVIDIA A100-SXM4-40GB; seed: 0
+LeRobot commit: 72e1d9e5e76ee719bacfc78bc34d817bee5fb521
+Model revision: 7152f13e34c6c115d808aea0e5d08aca74eac14b
+
+Scope: 10 Goal tasks, 10 episodes/task, one evaluation seed. Other suites and seeds were not evaluated.
+Settings: batch size 1, hard reset, fixed initial states, relative control, 10 action steps, BF16, compilation disabled.
+Reference: https://huggingface.co/docs/lerobot/en/libero
+
+Per-task outcomes:
+Task 0: 10/10
+Task 1: 10/10
+Task 2: 9/10
+Task 3: 9/10
+Task 4: 10/10
+Task 5: 10/10
+Task 6: 10/10
+Task 7: 10/10
+Task 8: 10/10
+Task 9: 10/10

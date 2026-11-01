@@ -1,0 +1,39 @@
+{
+  "output": "/data/rq2/diagnostics/20261030T185246Z",
+  "comparisons": [
+    {
+      "episode": 0,
+      "equal_settled_state": true,
+      "different_visual_parameters": [],
+      "image_metrics": {
+        "image": {
+          "mean_abs_difference": 0.0,
+          "max_abs_difference": 0.0,
+          "fraction_different_channels": 0.0
+        },
+        "image2": {
+          "mean_abs_difference": 0.0,
+          "max_abs_difference": 0.0,
+          "fraction_different_channels": 0.0
+        }
+      }
+    },
+    {
+      "episode": 1,
+      "equal_settled_state": true,
+      "different_visual_parameters": [],
+      "image_metrics": {
+        "image": {
+          "mean_abs_difference": 7.71604938271605e-06,
+          "max_abs_difference": 1.0,
+          "fraction_different_channels": 7.71604938271605e-06
+        },
+        "image2": {
+          "mean_abs_difference": 1.54320987654321e-05,
+          "max_abs_difference": 1.0,
+          "fraction_different_channels": 1.54320987654321e-05
+        }
+      }
+    }
+  ]
+}

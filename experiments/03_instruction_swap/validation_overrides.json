@@ -1,0 +1,11 @@
+{
+  "scope": "initial_state_alignment_and_validation",
+  "max_initial_state_alignment_difference": 1e-12,
+  "state_alignment_rationale": "Cross-platform reset probes differed only by floating-point tails (observed max 5.204170427930421e-18) with identical images and visual parameters. Restore only such tiny deviations to exact C0 post-settling state vectors, whose hashes were verified against the original recorded C0 hashes. Larger deviations abort. No model weights, policy action calculations, task goals or post-initialization actions are changed.",
+  "image_pair_tolerance": {
+    "max_abs_channel_difference": 2,
+    "max_fraction_different_channels": 0.001
+  },
+  "rationale": "Full reset-only preflights, before any formal C1/C2/C4 episode, found up to two intensity levels of GPU rendering difference despite exact supplied/settled states and exact visual-model parameters. Example: task 3 episode 9, wrist camera, nine differing color channels out of 388800, mean absolute difference 0.0000308642. The original one-level cap was too strict. No images, policy inputs, actions or success predicates are modified.",
+  "retained_records": "C0 and the running C3 use the original implementation; C3 records that pass its stricter one-level cap also satisfy this bound. All per-run thresholds and actual differences are retained."
+}

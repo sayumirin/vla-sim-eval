@@ -1,0 +1,25 @@
+Knightec VLA — Stage 2: visual robustness
+
+Model: lerobot/pi05_libero_finetuned_v044
+Baseline: 98/100 (98.0%)
+
+Lighting: 100/100; 95% Wilson CI 96.30–100.00%; drop -2.0 percentage points
+Camera viewpoints: 74/100; 95% Wilson CI 64.63–81.60%; drop 24.0 percentage points
+Object layout: 71/100; 95% Wilson CI 61.46–78.99%; drop 27.0 percentage points
+
+Summed formal GPU-process runtime including model loading: 75.8 minutes.
+Approximate elapsed time from first formal run to last completion: 62.3 minutes; overlapping the last two groups saved about 13.5 minutes.
+Formal plus smoke resource estimate: $3.62; not an invoice, excludes CPU build/preparation and unrecorded startup/storage/transfer.
+
+Interpretation limits:
+- One episode per sampled variant, evaluation and sampling seed 0; not the full LIBERO-plus benchmark.
+- 100 variants sampled uniformly without replacement per dimension. Base-task and difficulty mixtures differ; see per_base_task.csv.
+- Wilson intervals are descriptive Bernoulli intervals; related variants may be correlated, and intervals do not include seed or sampling uncertainty.
+- Stage-one 98/100 baseline has 10 initial states per base task; plus uses one initial state per variant, with custom layout states. This is not a paired causal comparison.
+- The isolated plus environment requires robosuite 1.4.1, while baseline used 1.4.0; this dependency difference is another comparison limitation.
+- Visual-perturbation prompts were normalized to original base-task prompts, removing filename suffixes. This protocol differs from unmodified LeRobot plus CLI.
+- Object layout combines object relocation and added distractors; it does not measure distractors alone.
+- Some upstream lighting difficulty labels are null; they are retained as unknown, without inferred labels.
+
+Reproduce summaries and plots: make plots (in stage2, WSL), or python make_plots.py.
+Raw results, 300 episode records, per-base-task counts and videos are preserved.

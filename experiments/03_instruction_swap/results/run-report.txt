@@ -1,0 +1,35 @@
+Knightec VLA — Stage 3A: paired language interventions
+
+Model: lerobot/pi05_libero_finetuned_v044
+500 formal episodes; one run seed; 100 paired initial states.
+C0: 97/100; previous stage-one baseline: 98/100. See baseline_validation in summary.json.
+Official/custom loop action equality was tested on identical real observations; the original C0 run was retained.
+
+Original: 97/100; Wilson 95% CI 91.55–98.97%; drop versus C0: +0.0 pp.
+Paraphrased: 97/100; Wilson 95% CI 91.55–98.97%; drop versus C0: +0.0 pp.
+Swapped task: 0/100; Wilson 95% CI 0.00–3.70%; drop versus C0: +97.0 pp.
+Empty task text: 11/100; Wilson 95% CI 6.25–18.63%; drop versus C0: +86.0 pp.
+Unrelated text: 8/100; Wilson 95% CI 4.11–15.00%; drop versus C0: +89.0 pp.
+
+Paired exact McNemar comparisons:
+C1_paraphrase: control-only successes=1, intervention-only successes=1, p=1, Holm p=1.
+C2_swap: control-only successes=97, intervention-only successes=0, p=1.26218e-29, Holm p=5.04871e-29.
+C3_empty: control-only successes=86, intervention-only successes=0, p=2.58494e-26, Holm p=5.16988e-26.
+C4_unrelated: control-only successes=89, intervention-only successes=0, p=3.23117e-27, Holm p=9.69352e-27.
+
+Elapsed time from first formal run to last completion (including diagnostic gaps): approximately 104.2 minutes; sum of contributing GPU-process times: 172.2 minutes.
+
+Interpretation limits:
+- One run seed, ten tasks and ten fixed initial states per task. Related episodes may be correlated; Wilson and McNemar statistics do not model task-level clustering.
+- All success predicates refer to the original task. A failed original task does not prove the replacement task was completed.
+- One fixed cyclic swap, one published paraphrase per task, one unrelated sentence. These do not cover all possible language interventions.
+- Empty task text retains the model prompt template and proprioceptive state tokens; this is not a no-language-token ablation.
+- Changing task text also changes token sequence lengths and state-token positions. This experiment measures task-text sensitivity; it does not fully isolate semantic understanding from formatting effects.
+- Supplied states, settled states, visual-model parameters and initial CPU/CUDA RNG match exactly. First-image checks use each run's declared one- or two-level intensity tolerance in at most 0.1% of color channels. The two-level validation-only allowance was calibrated from reset-only probes; no images or actions were modified. Raw images and differences are saved.
+- Four exact two-sided McNemar tests are reported with Holm adjustment across all four. C2 and C3 were designated primary before formal outcomes.
+- C0 was retained even though individual outcomes can differ from stage one. A real-observation replay verified identical official/custom action tensors; compatibility validation and any baseline discrepancy are disclosed separately. No C0 reruns were selected for favorable outcomes.
+- Cross-platform floating-point reset tails are aligned to verified C0 state snapshots only when the maximum difference is <=1e-12. Cached observation/controller sampling timing is preserved. Source snapshots exactly match the hashes originally recorded by C0. Actual alignment sizes are recorded.
+- Interrupted C3 prefixes are retained and only missing pairs are resumed; source runs and the non-overlapping merge are recorded. No completed episode is replaced based on its outcome.
+
+Reproduce: make plots (WSL). See README.txt and configs/rq2_swap.yaml.
+All 500 episode records and videos are saved locally.

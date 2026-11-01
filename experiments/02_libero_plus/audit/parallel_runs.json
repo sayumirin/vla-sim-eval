@@ -1,0 +1,16 @@
+[
+  {
+    "run": "camera_100_seed0_20261029T010844Z",
+    "recorded_episodes": 100,
+    "videos": 100,
+    "role": "formal_camera_run",
+    "files": 105
+  },
+  {
+    "run": "camera_100_seed0_20261029T012228Z",
+    "recorded_episodes": 0,
+    "videos": 0,
+    "role": "cancelled_before_any_episode",
+    "files": 3
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "selected_episodes": [
+    43,
+    1,
+    28,
+    14,
+    36,
+    12,
+    0,
+    27,
+    47,
+    7,
+    33,
+    34,
+    20,
+    49,
+    5,
+    38,
+    11,
+    23,
+    40,
+    15
+  ],
+  "frames": 8000,
+  "normalization_frames": 8000,
+  "dataset_revision": "c5467ba9059e4c65f27775ced212076980a173fb",
+  "image_cache": "exact decoded RGB; no image resizing or recompression loss"
+}

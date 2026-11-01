@@ -1,0 +1,67 @@
+{
+  "bootstrap_seed": 20261030,
+  "bootstrap_replicates": 10000,
+  "summary": [
+    {
+      "n_demonstrations": 5,
+      "mean_success_rate": 0.22666666666666666,
+      "bootstrap_low": 0.09333333333333334,
+      "bootstrap_high": 0.38,
+      "seed_std": 0.11015141094572205,
+      "seed_0_rate": 0.12,
+      "seed_1_rate": 0.34,
+      "seed_2_rate": 0.22,
+      "successes": 34,
+      "episodes": 150
+    },
+    {
+      "n_demonstrations": 10,
+      "mean_success_rate": 0.4666666666666667,
+      "bootstrap_low": 0.31333333333333335,
+      "bootstrap_high": 0.62,
+      "seed_std": 0.10066445913694336,
+      "seed_0_rate": 0.56,
+      "seed_1_rate": 0.36,
+      "seed_2_rate": 0.48,
+      "successes": 70,
+      "episodes": 150
+    },
+    {
+      "n_demonstrations": 20,
+      "mean_success_rate": 0.6866666666666666,
+      "bootstrap_low": 0.48,
+      "bootstrap_high": 0.86,
+      "seed_std": 0.17925772879665006,
+      "seed_0_rate": 0.78,
+      "seed_1_rate": 0.8,
+      "seed_2_rate": 0.48,
+      "successes": 103,
+      "episodes": 150
+    },
+    {
+      "n_demonstrations": 35,
+      "mean_success_rate": 0.8933333333333333,
+      "bootstrap_low": 0.8,
+      "bootstrap_high": 0.9733333333333334,
+      "seed_std": 0.041633319989322626,
+      "seed_0_rate": 0.94,
+      "seed_1_rate": 0.86,
+      "seed_2_rate": 0.88,
+      "successes": 134,
+      "episodes": 150
+    },
+    {
+      "n_demonstrations": 50,
+      "mean_success_rate": 0.8666666666666667,
+      "bootstrap_low": 0.7733333333333333,
+      "bootstrap_high": 0.9466666666666667,
+      "seed_std": 0.03055050463303896,
+      "seed_0_rate": 0.84,
+      "seed_1_rate": 0.86,
+      "seed_2_rate": 0.9,
+      "successes": 130,
+      "episodes": 150
+    }
+  ],
+  "limitations": "Few training seeds; one fixed subset chain, so subset-selection uncertainty is not measured. Bootstrap intervals are descriptive with few clusters and can collapse at all-zero/all-one outcomes; per-run Wilson intervals retain finite-evaluation uncertainty. Fixed training steps measure data scaling at a fixed optimization budget, not fully converged sample complexity. This is simulation and scripted demonstration data, not SO-101 real hardware."
+}

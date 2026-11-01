@@ -1,0 +1,51 @@
+{
+  "repo": "lerobot/aloha_sim_transfer_cube_scripted",
+  "revision": "c5467ba9059e4c65f27775ced212076980a173fb",
+  "episodes": 50,
+  "frames": 20000,
+  "length_per_episode": 400,
+  "fps": 50,
+  "cache": "lossless PNG decoded with the official PyAV RGB conversion",
+  "cache_equivalence_checks": [
+    {
+      "episode": 0,
+      "frame": 0,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 0,
+      "frame": 399,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 1,
+      "frame": 1,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 14,
+      "frame": 137,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 28,
+      "frame": 200,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 43,
+      "frame": 199,
+      "exact_rgb_equal": true
+    },
+    {
+      "episode": 49,
+      "frame": 399,
+      "exact_rgb_equal": true
+    }
+  ],
+  "normalization": "state/action statistics computed only from selected training episodes; fixed ImageNet image statistics",
+  "resnet_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "frame_cache_bytes": 905035440,
+  "gym_aloha_version": "0.1.5",
+  "env_source": "class AlohaEnv(gym.Env):\n    # TODO(aliberts): add \"human\" render_mode\n    metadata = {\"render_modes\": [\"rgb_array\"], \"render_fps\": 50}\n\n    def __init__(\n        self,\n        task,\n        obs_type=\"pixels\",\n        render_mode=\"rgb_array\",\n        observation_width=640,\n        observation_height=480,\n        visualization_width=640,\n        visualization_height=480,\n    ):\n        super().__init__()\n        self.task = task\n        self.obs_type = obs_type\n        self.render_mode = render_mode\n        self.observation_width = observation_width\n        self.observation_height = observation_height\n        self.visualization_width = visualization_width\n        self.visualization_height = visualization_height\n\n        self._env = self._make_env_task(self.task)\n\n        if self.obs_type == \"state\":\n            raise NotImplementedError()\n            self.observation_space = spaces.Box(\n                low=np.array([0] * len(JOINTS)),  # ???\n                high=np.array([255] * len(JOINTS)),  # ???\n                dtype=np.float64,\n            )\n        elif self.obs_type == \"pixels\":\n            self.observation_space = spaces.Dict(\n                {\n                    \"top\": spaces.Box(\n                        low=0,\n                        high=255,\n                        shape=(self.observation_height, self.observation_width, 3),\n                        dtype=np.uint8,\n                    )\n                }\n            )\n        elif self.obs_type == \"pixels_agent_pos\":\n            self.observation_space = spaces.Dict(\n                {\n                    \"pixels\": spaces.Dict(\n                        {\n                            \"top\": spaces.Box(\n                                low=0,\n                                high=255,\n                                shape=(self.observation_height, self.observation_width, 3),\n                                dtype=np.uint8,\n                            )\n                        }\n                    ),\n                    \"agent_pos\": spaces.Box(\n                        low=-1000.0,\n                        high=1000.0,\n                        shape=(len(JOINTS),),\n                        dtype=np.float64,\n                    ),\n                }\n            )\n\n        self.action_space = spaces.Box(low=-1, high=1, shape=(len(ACTIONS),), dtype=np.float32)\n\n    def render(self):\n        return self._render(visualize=True)\n\n    def _render(self, visualize=False):\n        assert self.render_mode == \"rgb_array\"\n        width, height = (\n            (self.visualization_width, self.visualization_height)\n            if visualize\n            else (self.observation_width, self.observation_height)\n        )\n        # if mode in [\"visualize\", \"human\"]:\n        #     height, width = self.visualize_height, self.visualize_width\n        # elif mode == \"rgb_array\":\n        #     height, width = self.observation_height, self.observation_width\n        # else:\n        #     raise ValueError(mode)\n        # TODO(rcadene): render and visualizer several cameras (e.g. angle, front_close)\n        image = self._env.physics.render(height=height, width=width, camera_id=\"top\")\n        return image\n\n    def _make_env_task(self, task_name):\n        # time limit is controlled by StepCounter in env factory\n        time_limit = float(\"inf\")\n\n        if task_name == \"transfer_cube\":\n            xml_path = ASSETS_DIR / \"bimanual_viperx_transfer_cube.xml\"\n            physics = mujoco.Physics.from_xml_path(str(xml_path))\n            task = TransferCubeTask()\n        elif task_name == \"insertion\":\n            xml_path = ASSETS_DIR / \"bimanual_viperx_insertion.xml\"\n            physics = mujoco.Physics.from_xml_path(str(xml_path))\n            task = InsertionTask()\n        elif task_name == \"end_effector_transfer_cube\":\n            raise NotImplementedError()\n            xml_path = ASSETS_DIR / \"bimanual_viperx_end_effector_transfer_cube.xml\"\n            physics = mujoco.Physics.from_xml_path(str(xml_path))\n            task = TransferCubeEndEffectorTask()\n        elif task_name == \"end_effector_insertion\":\n            raise NotImplementedError()\n            xml_path = ASSETS_DIR / \"bimanual_viperx_end_effector_insertion.xml\"\n            physics = mujoco.Physics.from_xml_path(str(xml_path))\n            task = InsertionEndEffectorTask()\n        else:\n            raise NotImplementedError(task_name)\n\n        env = control.Environment(\n            physics, task, time_limit, control_timestep=DT, n_sub_steps=None, flat_observation=False\n        )\n        return env\n\n    def _format_raw_obs(self, raw_obs):\n        if self.obs_type == \"state\":\n            raise NotImplementedError()\n        elif self.obs_type == \"pixels\":\n            obs = {\"top\": raw_obs[\"images\"][\"top\"].copy()}\n        elif self.obs_type == \"pixels_agent_pos\":\n            obs = {\n                \"pixels\": {\"top\": raw_obs[\"images\"][\"top\"].copy()},\n                \"agent_pos\": raw_obs[\"qpos\"],\n            }\n        return obs\n\n    def reset(self, seed=None, options=None):\n        super().reset(seed=seed)\n\n        # TODO(rcadene): how to seed the env?\n        if seed is not None:\n            self._env.task.random.seed(seed)\n            self._env.task._random = np.random.RandomState(seed)\n\n        # TODO(rcadene): do not use global variable for this\n        if self.task == \"transfer_cube\":\n            BOX_POSE[0] = sample_box_pose(seed)  # used in sim reset\n        elif self.task == \"insertion\":\n            BOX_POSE[0] = np.concatenate(sample_insertion_pose(seed))  # used in sim reset\n        else:\n            raise ValueError(self.task)\n\n        raw_obs = self._env.reset()\n\n        observation = self._format_raw_obs(raw_obs.observation)\n\n        info = {\"is_success\": False}\n        return observation, info\n\n    def step(self, action):\n        assert action.ndim == 1\n        # TODO(rcadene): add info[\"is_success\"] and info[\"success\"] ?\n\n        _, reward, _, raw_obs = self._env.step(action)\n\n        # TODO(rcadene): add an enum\n        terminated = is_success = reward == 4\n\n        info = {\"is_success\": is_success}\n\n        observation = self._format_raw_obs(raw_obs)\n\n        truncated = False\n        return observation, reward, terminated, truncated, info\n\n    def close(self):\n        pass\n"
+}

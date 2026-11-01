@@ -1,0 +1,12 @@
+{
+  "label": "infrastructure_retry_n20_s2",
+  "gpu": "A10",
+  "timeout_seconds": 1800,
+  "usd_per_second": 0.00039392,
+  "reserved_usd": 0.75711424,
+  "state": "completed",
+  "replaces": "formal_A10_n20_s2_k6000_20261030T232234Z",
+  "reason": "Original instance projected to exceed deadline from measured compute speed, before any evaluation result",
+  "run": "formal_A10_n20_s2_k6000_20261030T233133Z",
+  "settled_estimate_usd": 0.31954598723727745
+}

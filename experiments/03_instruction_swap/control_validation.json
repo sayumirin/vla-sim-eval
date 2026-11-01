@@ -1,0 +1,36 @@
+{
+  "reference": "/data/results_rq2/C0_original_100_seed0_20261030T190322Z",
+  "accepted": true,
+  "runner_sha256": "34f111758d72aec97207b9b7eb5a39daf01a344be85b8a0cdbc2bee423fca298",
+  "config_sha256": "922c4cb1bc416660109fbd541b35274360a8731d6d5f750a1c0b55c42af70d60",
+  "stage_one_successes": 98,
+  "control_successes": 97,
+  "outcome_differences": [
+    [
+      2,
+      5
+    ]
+  ],
+  "stage_one_only_success": 1,
+  "control_only_success": 0,
+  "exact_mcnemar_p": 1.0,
+  "exact_episode_agreement": false,
+  "official_custom_loop_comparison": {
+    "task_id": 2,
+    "initial_state_index": 5,
+    "environment_seed": 5,
+    "steps": 195,
+    "exact_tensor_equality": {
+      "action": true,
+      "reward": true,
+      "success": true,
+      "done": true
+    },
+    "max_absolute_action_difference": 0.0,
+    "method": "Official loop records a real simulation trajectory; custom loop replays identical raw observations and transition results with the same trained policy, processors and restored initial CPU/CUDA RNG.",
+    "all_checks_passed": true
+  },
+  "validation_time_utc": "2026-10-30T19:25:04.812769+00:00",
+  "acceptance_rule": "Exact official/custom action-tensor equality on identical real observations; no more than five percentage points baseline difference; exact McNemar p >= 0.05. This is an engineering compatibility check, not statistical proof of equivalence.",
+  "amendment": "The original exact-outcome gate was stricter than reproducibility allowed by observed renderer/closed-loop variability. This compatibility rule was adopted after a C0 discrepancy and before any formal intervention outcome. The original 100-episode C0 is retained without rerunning to select better outcomes."
+}

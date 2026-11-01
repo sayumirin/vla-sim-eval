@@ -1,0 +1,11 @@
+{
+  "reason": "Measured compute time approximately 0.20 seconds/update versus 0.09 on other A10 instances; projected completion exceeds reserved runtime.",
+  "last_progress": {
+    "step": 2400,
+    "elapsed_seconds": 503.073553982,
+    "loss": 0.8585820198059082,
+    "update_seconds": 0.19943423799998072
+  },
+  "gpu": "NVIDIA A10, P0, 1395 MHz, 6251 MHz, 99 %, 93.75 W\n",
+  "stopped_process": 7
+}

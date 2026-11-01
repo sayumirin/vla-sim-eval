@@ -1,0 +1,11 @@
+{
+  "task": "AlohaTransferCube-v0",
+  "model": "ACT, ImageNet-pretrained ResNet18, default fixed learning rate",
+  "fixed_before_formal_results": true,
+  "training_data": "One seed-0 permutation of 50 published scripted demonstrations; nested subsets. No evaluation rollout is used for training. State/action normalization is fit to each subset only; visual normalization uses fixed ImageNet constants.",
+  "step_selection": "Use the 50-demonstration pilot (training seed 777, evaluation seeds 20000-20019) to choose one shared step count and a budget-feasible design. Freeze that design before formal training. Formal training seeds are 0,1,2 where affordable; use final checkpoint only.",
+  "formal_evaluation": "50 common environment seeds 10000-10049 per trained policy; success is the simulator's reward==4 criterion. Record every outcome and initial qpos. Save two predetermined example videos per policy.",
+  "statistics": "Wilson 95% intervals for each policy's 50 outcomes. For each demonstration count, arithmetic mean across training seeds and a two-way bootstrap over training-seed indices and shared evaluation-seed indices (10000 replicates, bootstrap seed 20261030). Show per-seed Wilson intervals alongside the mean curve.",
+  "limitations": "Few training seeds; one fixed subset chain, so subset-selection uncertainty is not measured. Bootstrap intervals are descriptive with few clusters and can collapse at all-zero/all-one outcomes; per-run Wilson intervals retain finite-evaluation uncertainty. Fixed training steps measure data scaling at a fixed optimization budget, not fully converged sample complexity. This is simulation and scripted demonstration data, not SO-101 real hardware.",
+  "budget": "User ceiling $15. Reserve GPU calls against declared hard timeouts, resource limits and startup allowance; leave headroom for CPU setup/storage/transfer. Never launch unreserved jobs. Quotes are conservative resource estimates, not invoices."
+}

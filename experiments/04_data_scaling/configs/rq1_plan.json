@@ -1,0 +1,429 @@
+{
+  "dataset_repo": "lerobot/aloha_sim_transfer_cube_scripted",
+  "dataset_revision": "c5467ba9059e4c65f27775ced212076980a173fb",
+  "dataset_info": {
+    "codebase_version": "v3.0",
+    "fps": 50,
+    "features": {
+      "observation.images.top": {
+        "dtype": "video",
+        "shape": [
+          480,
+          640,
+          3
+        ],
+        "names": [
+          "height",
+          "width",
+          "channel"
+        ],
+        "video_info": {
+          "video.fps": 50.0,
+          "video.codec": "av1",
+          "video.pix_fmt": "yuv420p",
+          "video.is_depth_map": false,
+          "has_audio": false
+        }
+      },
+      "observation.state": {
+        "dtype": "float32",
+        "shape": [
+          14
+        ],
+        "names": {
+          "motors": [
+            "left_waist",
+            "left_shoulder",
+            "left_elbow",
+            "left_forearm_roll",
+            "left_wrist_angle",
+            "left_wrist_rotate",
+            "left_gripper",
+            "right_waist",
+            "right_shoulder",
+            "right_elbow",
+            "right_forearm_roll",
+            "right_wrist_angle",
+            "right_wrist_rotate",
+            "right_gripper"
+          ]
+        },
+        "fps": 50
+      },
+      "action": {
+        "dtype": "float32",
+        "shape": [
+          14
+        ],
+        "names": {
+          "motors": [
+            "left_waist",
+            "left_shoulder",
+            "left_elbow",
+            "left_forearm_roll",
+            "left_wrist_angle",
+            "left_wrist_rotate",
+            "left_gripper",
+            "right_waist",
+            "right_shoulder",
+            "right_elbow",
+            "right_forearm_roll",
+            "right_wrist_angle",
+            "right_wrist_rotate",
+            "right_gripper"
+          ]
+        },
+        "fps": 50
+      },
+      "episode_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      },
+      "frame_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      },
+      "timestamp": {
+        "dtype": "float32",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      },
+      "next.done": {
+        "dtype": "bool",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      },
+      "index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      },
+      "task_index": {
+        "dtype": "int64",
+        "shape": [
+          1
+        ],
+        "names": null,
+        "fps": 50
+      }
+    },
+    "total_episodes": 50,
+    "total_frames": 20000,
+    "total_tasks": 1,
+    "chunks_size": 1000,
+    "data_files_size_in_mb": 100,
+    "video_files_size_in_mb": 500,
+    "data_path": "data/chunk-{chunk_index:03d}/file-{file_index:03d}.parquet",
+    "video_path": "videos/{video_key}/chunk-{chunk_index:03d}/file-{file_index:03d}.mp4",
+    "robot_type": "aloha",
+    "splits": {
+      "train": "0:50"
+    }
+  },
+  "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+  "subset_seed": 0,
+  "episode_permutation": [
+    43,
+    1,
+    28,
+    14,
+    36,
+    12,
+    0,
+    27,
+    47,
+    7,
+    33,
+    34,
+    20,
+    49,
+    5,
+    38,
+    11,
+    23,
+    40,
+    15,
+    10,
+    21,
+    46,
+    3,
+    9,
+    4,
+    41,
+    42,
+    39,
+    17,
+    29,
+    45,
+    6,
+    35,
+    18,
+    8,
+    44,
+    13,
+    37,
+    22,
+    30,
+    19,
+    25,
+    31,
+    32,
+    16,
+    2,
+    26,
+    48,
+    24
+  ],
+  "subsets": {
+    "5": [
+      43,
+      1,
+      28,
+      14,
+      36
+    ],
+    "10": [
+      43,
+      1,
+      28,
+      14,
+      36,
+      12,
+      0,
+      27,
+      47,
+      7
+    ],
+    "20": [
+      43,
+      1,
+      28,
+      14,
+      36,
+      12,
+      0,
+      27,
+      47,
+      7,
+      33,
+      34,
+      20,
+      49,
+      5,
+      38,
+      11,
+      23,
+      40,
+      15
+    ],
+    "35": [
+      43,
+      1,
+      28,
+      14,
+      36,
+      12,
+      0,
+      27,
+      47,
+      7,
+      33,
+      34,
+      20,
+      49,
+      5,
+      38,
+      11,
+      23,
+      40,
+      15,
+      10,
+      21,
+      46,
+      3,
+      9,
+      4,
+      41,
+      42,
+      39,
+      17,
+      29,
+      45,
+      6,
+      35,
+      18
+    ],
+    "50": [
+      43,
+      1,
+      28,
+      14,
+      36,
+      12,
+      0,
+      27,
+      47,
+      7,
+      33,
+      34,
+      20,
+      49,
+      5,
+      38,
+      11,
+      23,
+      40,
+      15,
+      10,
+      21,
+      46,
+      3,
+      9,
+      4,
+      41,
+      42,
+      39,
+      17,
+      29,
+      45,
+      6,
+      35,
+      18,
+      8,
+      44,
+      13,
+      37,
+      22,
+      30,
+      19,
+      25,
+      31,
+      32,
+      16,
+      2,
+      26,
+      48,
+      24
+    ]
+  },
+  "full_design": {
+    "sizes": [
+      5,
+      10,
+      20,
+      35,
+      50
+    ],
+    "training_seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "reduced_design": {
+    "sizes": [
+      10,
+      20,
+      50
+    ],
+    "training_seeds": [
+      0,
+      1
+    ]
+  },
+  "formal_eval_seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027,
+    10028,
+    10029,
+    10030,
+    10031,
+    10032,
+    10033,
+    10034,
+    10035,
+    10036,
+    10037,
+    10038,
+    10039,
+    10040,
+    10041,
+    10042,
+    10043,
+    10044,
+    10045,
+    10046,
+    10047,
+    10048,
+    10049
+  ],
+  "pilot_training_seed": 777,
+  "pilot_eval_seeds": [
+    20000,
+    20001,
+    20002,
+    20003,
+    20004,
+    20005,
+    20006,
+    20007,
+    20008,
+    20009,
+    20010,
+    20011,
+    20012,
+    20013,
+    20014,
+    20015,
+    20016,
+    20017,
+    20018,
+    20019
+  ],
+  "budget_usd": 15,
+  "planned_reservation_budget_usd": 12,
+  "protocol": "Freeze one training-step budget after the 50-demo pilot; use the same batch size and final checkpoint for every formal run. Subset-only action/state statistics; fixed ImageNet visual normalization. Training and pilot evaluation are separate from formal evaluation."
+}

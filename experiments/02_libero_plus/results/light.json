@@ -1,0 +1,4033 @@
+{
+  "model_repo": "lerobot/pi05_libero_finetuned_v044",
+  "model_revision": "7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+  "model_path": "/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/models--lerobot--pi05_libero_finetuned_v044/snapshots/7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "assets_path": "/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/datasets--lerobot--libero-assets/snapshots/0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+  "assets_revision": "0b3ea86be5fe169d0fd036ae63d1070ec09e90f6",
+  "libero_plus_commit": "4976dc30028e805ff8094b55501d532c48fec182",
+  "plus_assets": {
+    "repo": "Sylvest/LIBERO-plus",
+    "revision": "dd2bd61b7d9a6fef1abc52d606e983b41886a149",
+    "archive_sha256": "96764a4bfbdaea98d4411598caeab235458318fe0f549611b93d1a323027b3cf",
+    "extracted_files": 23870,
+    "selection": "all shared assets plus complete selected custom-object subtrees",
+    "custom_object_prefixes": [
+      "new_objects/bag_of_yeast/ibvtik/",
+      "new_objects/bottle_of_alfredo_sauce/xwzqjr/",
+      "new_objects/bottle_of_antihistamines/agavwx/",
+      "new_objects/bottle_of_aspirin/psvktc/",
+      "new_objects/bottle_of_baby_oil/xpdlrr/",
+      "new_objects/bottle_of_barbecue_sauce/nkqvex/",
+      "new_objects/box_of_shampoo/bclpiq/",
+      "new_objects/box_of_vegetable_juice/jsnnlv/",
+      "new_objects/box_of_yogurt/jkemqc/",
+      "new_objects/boxed_ink_cartridge/oinelo/",
+      "new_objects/can_of_sardines/dpgmry/",
+      "new_objects/can_of_soda/bfrzvk/",
+      "new_objects/canned_food/acgdtc/"
+    ]
+  },
+  "category": "light",
+  "smoke": false,
+  "seed": 0,
+  "task_ids": [
+    2312,
+    2315,
+    2327,
+    2328,
+    2332,
+    2335,
+    2339,
+    2343,
+    2348,
+    2349,
+    2359,
+    2360,
+    2362,
+    2363,
+    2364,
+    2368,
+    2373,
+    2374,
+    2378,
+    2383,
+    2385,
+    2386,
+    2387,
+    2389,
+    2392,
+    2393,
+    2395,
+    2397,
+    2402,
+    2410,
+    2414,
+    2423,
+    2425,
+    2426,
+    2434,
+    2437,
+    2438,
+    2440,
+    2442,
+    2444,
+    2445,
+    2450,
+    2451,
+    2452,
+    2453,
+    2456,
+    2457,
+    2459,
+    2462,
+    2464,
+    2466,
+    2467,
+    2468,
+    2470,
+    2472,
+    2475,
+    2481,
+    2483,
+    2492,
+    2493,
+    2495,
+    2496,
+    2498,
+    2507,
+    2509,
+    2510,
+    2512,
+    2516,
+    2517,
+    2518,
+    2519,
+    2523,
+    2524,
+    2527,
+    2529,
+    2533,
+    2534,
+    2541,
+    2545,
+    2546,
+    2547,
+    2548,
+    2549,
+    2551,
+    2553,
+    2555,
+    2556,
+    2558,
+    2559,
+    2560,
+    2563,
+    2570,
+    2573,
+    2575,
+    2578,
+    2580,
+    2582,
+    2585,
+    2588,
+    2589
+  ],
+  "selection": {
+    "category": "Light Conditions",
+    "available": 279,
+    "task_ids": [
+      2312,
+      2315,
+      2327,
+      2328,
+      2332,
+      2335,
+      2339,
+      2343,
+      2348,
+      2349,
+      2359,
+      2360,
+      2362,
+      2363,
+      2364,
+      2368,
+      2373,
+      2374,
+      2378,
+      2383,
+      2385,
+      2386,
+      2387,
+      2389,
+      2392,
+      2393,
+      2395,
+      2397,
+      2402,
+      2410,
+      2414,
+      2423,
+      2425,
+      2426,
+      2434,
+      2437,
+      2438,
+      2440,
+      2442,
+      2444,
+      2445,
+      2450,
+      2451,
+      2452,
+      2453,
+      2456,
+      2457,
+      2459,
+      2462,
+      2464,
+      2466,
+      2467,
+      2468,
+      2470,
+      2472,
+      2475,
+      2481,
+      2483,
+      2492,
+      2493,
+      2495,
+      2496,
+      2498,
+      2507,
+      2509,
+      2510,
+      2512,
+      2516,
+      2517,
+      2518,
+      2519,
+      2523,
+      2524,
+      2527,
+      2529,
+      2533,
+      2534,
+      2541,
+      2545,
+      2546,
+      2547,
+      2548,
+      2549,
+      2551,
+      2553,
+      2555,
+      2556,
+      2558,
+      2559,
+      2560,
+      2563,
+      2570,
+      2573,
+      2575,
+      2578,
+      2580,
+      2582,
+      2585,
+      2588,
+      2589
+    ],
+    "tasks": [
+      {
+        "id": 2313,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_1",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2312,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2316,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_12",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2315,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2328,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_25",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2327,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2329,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_26",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2328,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2333,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_3",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2332,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2336,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_33",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2335,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2340,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_38",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2339,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2344,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_43",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2343,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2349,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_49",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2348,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2350,
+        "name": "open_the_middle_drawer_of_the_cabinet_light_5",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2349,
+        "base_task": "open_the_middle_drawer_of_the_cabinet",
+        "prompt": "open the middle drawer of the cabinet"
+      },
+      {
+        "id": 2360,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_14",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2359,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2361,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_15",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2360,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2363,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_17",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2362,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2364,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_18",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2363,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2365,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_19",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2364,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2369,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_22",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2368,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2374,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_27",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2373,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2375,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_28",
+        "category": "Light Conditions",
+        "difficulty_level": 4,
+        "task_id": 2374,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2379,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_31",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2378,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2384,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_36",
+        "category": "Light Conditions",
+        "difficulty_level": 4,
+        "task_id": 2383,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2386,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_38",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2385,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2387,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_39",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2386,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2388,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_4",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2387,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2390,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_41",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2389,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2393,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_44",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2392,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2394,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_45",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2393,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2396,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_47",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2395,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2398,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_49",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2397,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2403,
+        "name": "open_the_top_drawer_and_put_the_bowl_inside_light_8",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2402,
+        "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+        "prompt": "open the top drawer and put the bowl inside"
+      },
+      {
+        "id": 2411,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_19",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2410,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2415,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_23",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2414,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2424,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_33",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2423,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2426,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_35",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2425,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2427,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_36",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2426,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2435,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_43",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2434,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2438,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_48",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2437,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2439,
+        "name": "push_the_plate_to_the_front_of_the_stove_light_50",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2438,
+        "base_task": "push_the_plate_to_the_front_of_the_stove",
+        "prompt": "push the plate to the front of the stove"
+      },
+      {
+        "id": 2441,
+        "name": "put_the_bowl_on_the_plate_light_1",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2440,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2443,
+        "name": "put_the_bowl_on_the_plate_light_13",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2442,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2445,
+        "name": "put_the_bowl_on_the_plate_light_16",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2444,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2446,
+        "name": "put_the_bowl_on_the_plate_light_18",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2445,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2451,
+        "name": "put_the_bowl_on_the_plate_light_27",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2450,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2452,
+        "name": "put_the_bowl_on_the_plate_light_29",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2451,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2453,
+        "name": "put_the_bowl_on_the_plate_light_34",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2452,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2454,
+        "name": "put_the_bowl_on_the_plate_light_35",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2453,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2457,
+        "name": "put_the_bowl_on_the_plate_light_38",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2456,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2458,
+        "name": "put_the_bowl_on_the_plate_light_39",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2457,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2460,
+        "name": "put_the_bowl_on_the_plate_light_40",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2459,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2463,
+        "name": "put_the_bowl_on_the_plate_light_49",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2462,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2465,
+        "name": "put_the_bowl_on_the_plate_light_7",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2464,
+        "base_task": "put_the_bowl_on_the_plate",
+        "prompt": "put the bowl on the plate"
+      },
+      {
+        "id": 2467,
+        "name": "put_the_bowl_on_the_stove_light_11",
+        "category": "Light Conditions",
+        "difficulty_level": 4,
+        "task_id": 2466,
+        "base_task": "put_the_bowl_on_the_stove",
+        "prompt": "put the bowl on the stove"
+      },
+      {
+        "id": 2468,
+        "name": "put_the_bowl_on_the_stove_light_15",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2467,
+        "base_task": "put_the_bowl_on_the_stove",
+        "prompt": "put the bowl on the stove"
+      },
+      {
+        "id": 2469,
+        "name": "put_the_bowl_on_the_stove_light_24",
+        "category": "Light Conditions",
+        "difficulty_level": 4,
+        "task_id": 2468,
+        "base_task": "put_the_bowl_on_the_stove",
+        "prompt": "put the bowl on the stove"
+      },
+      {
+        "id": 2471,
+        "name": "put_the_bowl_on_top_of_the_cabinet_light_10",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2470,
+        "base_task": "put_the_bowl_on_top_of_the_cabinet",
+        "prompt": "put the bowl on top of the cabinet"
+      },
+      {
+        "id": 2473,
+        "name": "put_the_bowl_on_top_of_the_cabinet_light_2",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2472,
+        "base_task": "put_the_bowl_on_top_of_the_cabinet",
+        "prompt": "put the bowl on top of the cabinet"
+      },
+      {
+        "id": 2476,
+        "name": "put_the_bowl_on_top_of_the_cabinet_light_38",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2475,
+        "base_task": "put_the_bowl_on_top_of_the_cabinet",
+        "prompt": "put the bowl on top of the cabinet"
+      },
+      {
+        "id": 2482,
+        "name": "put_the_bowl_on_top_of_the_cabinet_light_6",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2481,
+        "base_task": "put_the_bowl_on_top_of_the_cabinet",
+        "prompt": "put the bowl on top of the cabinet"
+      },
+      {
+        "id": 2484,
+        "name": "put_the_cream_cheese_in_the_bowl_light_1",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2483,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2493,
+        "name": "put_the_cream_cheese_in_the_bowl_light_27",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2492,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2494,
+        "name": "put_the_cream_cheese_in_the_bowl_light_30",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2493,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2496,
+        "name": "put_the_cream_cheese_in_the_bowl_light_37",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2495,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2497,
+        "name": "put_the_cream_cheese_in_the_bowl_light_38",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2496,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2499,
+        "name": "put_the_cream_cheese_in_the_bowl_light_41",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2498,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2508,
+        "name": "put_the_cream_cheese_in_the_bowl_light_8",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2507,
+        "base_task": "put_the_cream_cheese_in_the_bowl",
+        "prompt": "put the cream cheese in the bowl"
+      },
+      {
+        "id": 2510,
+        "name": "put_the_wine_bottle_on_the_rack_light_11",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2509,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2511,
+        "name": "put_the_wine_bottle_on_the_rack_light_12",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2510,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2513,
+        "name": "put_the_wine_bottle_on_the_rack_light_15",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2512,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2517,
+        "name": "put_the_wine_bottle_on_the_rack_light_19",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2516,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2518,
+        "name": "put_the_wine_bottle_on_the_rack_light_2",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2517,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2519,
+        "name": "put_the_wine_bottle_on_the_rack_light_20",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2518,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2520,
+        "name": "put_the_wine_bottle_on_the_rack_light_21",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2519,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2524,
+        "name": "put_the_wine_bottle_on_the_rack_light_26",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2523,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2525,
+        "name": "put_the_wine_bottle_on_the_rack_light_27",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2524,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2528,
+        "name": "put_the_wine_bottle_on_the_rack_light_31",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2527,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2530,
+        "name": "put_the_wine_bottle_on_the_rack_light_35",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2529,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2534,
+        "name": "put_the_wine_bottle_on_the_rack_light_43",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2533,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2535,
+        "name": "put_the_wine_bottle_on_the_rack_light_44",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2534,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2542,
+        "name": "put_the_wine_bottle_on_the_rack_light_8",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2541,
+        "base_task": "put_the_wine_bottle_on_the_rack",
+        "prompt": "put the wine bottle on the rack"
+      },
+      {
+        "id": 2546,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_14",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2545,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2547,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_15",
+        "category": "Light Conditions",
+        "difficulty_level": 4,
+        "task_id": 2546,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2548,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_18",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2547,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2549,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_19",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2548,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2550,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_2",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2549,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2552,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_22",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2551,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2554,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_3",
+        "category": "Light Conditions",
+        "difficulty_level": 5,
+        "task_id": 2553,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2556,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_32",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2555,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2557,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_33",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2556,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2559,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_35",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2558,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2560,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_36",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2559,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2561,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_37",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2560,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2564,
+        "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_40",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2563,
+        "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+        "prompt": "put the wine bottle on top of the cabinet"
+      },
+      {
+        "id": 2571,
+        "name": "turn_on_the_stove_light_1",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2570,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2574,
+        "name": "turn_on_the_stove_light_13",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2573,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2576,
+        "name": "turn_on_the_stove_light_19",
+        "category": "Light Conditions",
+        "difficulty_level": 1,
+        "task_id": 2575,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2579,
+        "name": "turn_on_the_stove_light_22",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2578,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2581,
+        "name": "turn_on_the_stove_light_24",
+        "category": "Light Conditions",
+        "difficulty_level": 3,
+        "task_id": 2580,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2583,
+        "name": "turn_on_the_stove_light_28",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2582,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2586,
+        "name": "turn_on_the_stove_light_32",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2585,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2589,
+        "name": "turn_on_the_stove_light_41",
+        "category": "Light Conditions",
+        "difficulty_level": null,
+        "task_id": 2588,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      },
+      {
+        "id": 2590,
+        "name": "turn_on_the_stove_light_5",
+        "category": "Light Conditions",
+        "difficulty_level": 2,
+        "task_id": 2589,
+        "base_task": "turn_on_the_stove",
+        "prompt": "turn on the stove"
+      }
+    ],
+    "base_task_counts": {
+      "open_the_middle_drawer_of_the_cabinet": 10,
+      "open_the_top_drawer_and_put_the_bowl_inside": 19,
+      "push_the_plate_to_the_front_of_the_stove": 8,
+      "put_the_bowl_on_the_plate": 13,
+      "put_the_bowl_on_the_stove": 3,
+      "put_the_bowl_on_top_of_the_cabinet": 4,
+      "put_the_cream_cheese_in_the_bowl": 7,
+      "put_the_wine_bottle_on_the_rack": 14,
+      "put_the_wine_bottle_on_top_of_the_cabinet": 13,
+      "turn_on_the_stove": 9
+    },
+    "difficulty_counts": {
+      "2": 20,
+      "null": 41,
+      "1": 15,
+      "3": 10,
+      "4": 5,
+      "5": 9
+    }
+  },
+  "prompt_protocol": "Original base-task filename converted to spaces, matching stage-one LeRobot prompts; no perturbation suffixes.",
+  "runner_sha256": "3e0f3ea2fa6aea579dc3192fa899bee36cbc1d2d2c98f87486e138554f4db0c0",
+  "selection_sha256": "7d703ab0e4750a1776a533b657518586117d8dab10991c26ee8876f95585ee9b",
+  "asset_storage": "Exact archive bytes baked into evaluation image on CPU",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "status": "completed",
+  "output": "/data/results_plus/light_100_seed0_20261029T010202Z",
+  "max_seconds": 3600,
+  "command": [
+    "/usr/local/bin/python",
+    "/opt/knightec/run_plus_eval.py",
+    "--policy.path=/__modal/volumes/vo-iml798sZjt1SEiTitKonkh/huggingface/hub/models--lerobot--pi05_libero_finetuned_v044/snapshots/7152f13e34c6c115d808aea0e5d08aca74eac14b",
+    "--policy.device=cuda",
+    "--policy.dtype=bfloat16",
+    "--policy.compile_model=false",
+    "--policy.n_action_steps=10",
+    "--env.type=libero_plus",
+    "--env.task=libero_goal",
+    "--env.task_ids=[2312, 2315, 2327, 2328, 2332, 2335, 2339, 2343, 2348, 2349, 2359, 2360, 2362, 2363, 2364, 2368, 2373, 2374, 2378, 2383, 2385, 2386, 2387, 2389, 2392, 2393, 2395, 2397, 2402, 2410, 2414, 2423, 2425, 2426, 2434, 2437, 2438, 2440, 2442, 2444, 2445, 2450, 2451, 2452, 2453, 2456, 2457, 2459, 2462, 2464, 2466, 2467, 2468, 2470, 2472, 2475, 2481, 2483, 2492, 2493, 2495, 2496, 2498, 2507, 2509, 2510, 2512, 2516, 2517, 2518, 2519, 2523, 2524, 2527, 2529, 2533, 2534, 2541, 2545, 2546, 2547, 2548, 2549, 2551, 2553, 2555, 2556, 2558, 2559, 2560, 2563, 2570, 2573, 2575, 2578, 2580, 2582, 2585, 2588, 2589]",
+    "--env.control_mode=relative",
+    "--env.init_states=true",
+    "--env.hard_reset=true",
+    "--env.max_parallel_tasks=1",
+    "--eval.batch_size=1",
+    "--eval.n_episodes=1",
+    "--seed=0",
+    "--output_dir=/data/results_plus/light_100_seed0_20261029T010202Z"
+  ],
+  "exit_code": 0,
+  "results": {
+    "per_task": [
+      {
+        "task_group": "libero_goal",
+        "task_id": 2312,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2312/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2315,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2315/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2327,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2327/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2328,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2328/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2332,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2332/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2335,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2335/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2339,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2339/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2343,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2343/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2348,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2348/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2349,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2349/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2359,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2359/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2360,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2360/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2362,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2362/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2363,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2363/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2364,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2364/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2368,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2368/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2373,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2373/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2374,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2374/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2378,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2378/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2383,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2383/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2385,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2385/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2386,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2386/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2387,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2387/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2389,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2389/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2392,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2392/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2393,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2393/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2395,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2395/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2397,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2397/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2402,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2402/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2410,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2410/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2414,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2414/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2423,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2423/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2425,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2425/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2426,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2426/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2434,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2434/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2437,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2437/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2438,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2438/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2440,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2440/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2442,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2442/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2444,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2444/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2445,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2445/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2450,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2450/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2451,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2451/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2452,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2452/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2453,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2453/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2456,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2456/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2457,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2457/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2459,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2459/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2462,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2462/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2464,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2464/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2466,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2466/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2467,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2467/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2468,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2468/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2470,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2470/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2472,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2472/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2475,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2475/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2481,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2481/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2483,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2483/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2492,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2492/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2493,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2493/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2495,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2495/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2496,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2496/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2498,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2498/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2507,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2507/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2509,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2509/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2510,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2510/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2512,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2512/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2516,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2516/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2517,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2517/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2518,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2518/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2519,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2519/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2523,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2523/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2524,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2524/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2527,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2527/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2529,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2529/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2533,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2533/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2534,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2534/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2541,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2541/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2545,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2545/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2546,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2546/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2547,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2547/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2548,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2548/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2549,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2549/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2551,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2551/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2553,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2553/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2555,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2555/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2556,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2556/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2558,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2558/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2559,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2559/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2560,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2560/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2563,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2563/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2570,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2570/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2573,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2573/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2575,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2575/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2578,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2578/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2580,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2580/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2582,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2582/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2585,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2585/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2588,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2588/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      },
+      {
+        "task_group": "libero_goal",
+        "task_id": 2589,
+        "metrics": {
+          "sum_rewards": [
+            1.0
+          ],
+          "max_rewards": [
+            1.0
+          ],
+          "successes": [
+            true
+          ],
+          "video_paths": [
+            "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2589/eval_episode_0.mp4"
+          ],
+          "predicted_video_paths": []
+        },
+        "n_episodes": 1,
+        "n_success": 1,
+        "pc_success": 100.0,
+        "pc_success_ci95": [
+          20.654931437723747,
+          100.0
+        ]
+      }
+    ],
+    "per_group": {
+      "libero_goal": {
+        "avg_sum_reward": 1.0,
+        "avg_max_reward": 1.0,
+        "pc_success": 100.0,
+        "n_episodes": 100,
+        "n_success": 100,
+        "pc_success_ci95": [
+          96.30065017930143,
+          100.0
+        ],
+        "video_paths": [
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2312/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2315/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2327/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2328/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2332/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2335/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2339/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2343/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2348/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2349/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2359/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2360/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2362/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2363/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2364/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2368/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2373/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2374/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2378/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2383/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2385/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2386/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2387/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2389/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2392/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2393/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2395/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2397/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2402/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2410/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2414/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2423/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2425/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2426/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2434/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2437/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2438/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2440/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2442/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2444/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2445/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2450/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2451/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2452/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2453/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2456/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2457/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2459/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2462/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2464/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2466/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2467/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2468/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2470/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2472/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2475/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2481/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2483/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2492/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2493/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2495/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2496/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2498/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2507/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2509/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2510/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2512/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2516/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2517/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2518/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2519/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2523/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2524/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2527/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2529/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2533/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2534/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2541/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2545/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2546/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2547/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2548/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2549/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2551/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2553/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2555/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2556/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2558/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2559/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2560/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2563/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2570/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2573/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2575/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2578/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2580/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2582/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2585/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2588/eval_episode_0.mp4",
+          "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2589/eval_episode_0.mp4"
+        ],
+        "predicted_video_paths": []
+      }
+    },
+    "overall": {
+      "avg_sum_reward": 1.0,
+      "avg_max_reward": 1.0,
+      "pc_success": 100.0,
+      "n_episodes": 100,
+      "n_success": 100,
+      "pc_success_ci95": [
+        96.30065017930143,
+        100.0
+      ],
+      "eval_s": 1075.3268382549286,
+      "eval_ep_s": 10.75326839208603,
+      "video_paths": [
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2312/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2315/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2327/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2328/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2332/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2335/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2339/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2343/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2348/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2349/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2359/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2360/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2362/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2363/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2364/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2368/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2373/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2374/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2378/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2383/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2385/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2386/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2387/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2389/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2392/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2393/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2395/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2397/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2402/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2410/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2414/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2423/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2425/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2426/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2434/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2437/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2438/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2440/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2442/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2444/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2445/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2450/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2451/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2452/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2453/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2456/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2457/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2459/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2462/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2464/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2466/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2467/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2468/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2470/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2472/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2475/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2481/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2483/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2492/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2493/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2495/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2496/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2498/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2507/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2509/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2510/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2512/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2516/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2517/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2518/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2519/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2523/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2524/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2527/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2529/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2533/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2534/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2541/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2545/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2546/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2547/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2548/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2549/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2551/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2553/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2555/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2556/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2558/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2559/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2560/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2563/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2570/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2573/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2575/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2578/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2580/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2582/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2585/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2588/eval_episode_0.mp4",
+        "/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2589/eval_episode_0.mp4"
+      ],
+      "predicted_video_paths": []
+    }
+  },
+  "log_tail": "ht_100_seed0_20261029T010202Z/videos/libero_goal_2549/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2551/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2553/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2555/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2556/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2558/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2559/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2560/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2563/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2570/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2573/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2575/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2578/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2580/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2582/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2585/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2588/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2589/eval_episode_0.mp4'], 'predicted_video_paths': []}}\nINFO 2026-10-29 01:22:21 bot_eval.py:859 \nAggregated Metrics for overall:\nINFO 2026-10-29 01:22:21 bot_eval.py:860 {'avg_sum_reward': 1.0, 'avg_max_reward': 1.0, 'pc_success': 100.0, 'n_episodes': 100, 'n_success': 100, 'pc_success_ci95': [96.30065017930143, 100.0], 'eval_s': 1075.3268382549286, 'eval_ep_s': 10.75326839208603, 'video_paths': ['/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2312/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2315/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2327/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2328/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2332/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2335/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2339/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2343/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2348/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2349/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2359/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2360/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2362/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2363/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2364/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2368/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2373/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2374/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2378/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2383/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2385/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2386/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2387/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2389/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2392/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2393/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2395/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2397/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2402/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2410/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2414/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2423/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2425/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2426/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2434/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2437/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2438/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2440/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2442/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2444/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2445/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2450/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2451/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2452/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2453/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2456/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2457/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2459/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2462/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2464/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2466/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2467/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2468/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2470/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2472/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2475/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2481/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2483/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2492/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2493/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2495/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2496/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2498/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2507/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2509/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2510/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2512/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2516/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2517/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2518/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2519/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2523/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2524/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2527/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2529/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2533/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2534/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2541/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2545/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2546/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2547/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2548/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2549/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2551/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2553/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2555/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2556/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2558/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2559/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2560/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2563/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2570/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2573/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2575/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2578/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2580/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2582/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2585/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2588/eval_episode_0.mp4', '/data/results_plus/light_100_seed0_20261029T010202Z/videos/libero_goal_2589/eval_episode_0.mp4'], 'predicted_video_paths': []}\nINFO 2026-10-29 01:22:21 bot_eval.py:868 End of eval\n",
+  "wall_seconds": 1220.264676943
+}

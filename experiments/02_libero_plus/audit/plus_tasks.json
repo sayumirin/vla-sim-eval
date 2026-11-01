@@ -1,0 +1,3093 @@
+{
+  "suite": "libero_goal",
+  "seed": 0,
+  "episodes_per_variant": 1,
+  "sampling": "Uniform sample without replacement, 100 per dimension, independent Random(0) per category",
+  "libero_plus_commit": "4976dc30028e805ff8094b55501d532c48fec182",
+  "classification_sha256": "c0b93d17a0687017e316e09f90a92732ada29bd086c1997865e3d4c14730f9bd",
+  "prompt_protocol": "Original base-task filename converted to spaces, matching stage-one LeRobot prompts; no perturbation suffixes.",
+  "categories": {
+    "light": {
+      "category": "Light Conditions",
+      "available": 279,
+      "task_ids": [
+        2312,
+        2315,
+        2327,
+        2328,
+        2332,
+        2335,
+        2339,
+        2343,
+        2348,
+        2349,
+        2359,
+        2360,
+        2362,
+        2363,
+        2364,
+        2368,
+        2373,
+        2374,
+        2378,
+        2383,
+        2385,
+        2386,
+        2387,
+        2389,
+        2392,
+        2393,
+        2395,
+        2397,
+        2402,
+        2410,
+        2414,
+        2423,
+        2425,
+        2426,
+        2434,
+        2437,
+        2438,
+        2440,
+        2442,
+        2444,
+        2445,
+        2450,
+        2451,
+        2452,
+        2453,
+        2456,
+        2457,
+        2459,
+        2462,
+        2464,
+        2466,
+        2467,
+        2468,
+        2470,
+        2472,
+        2475,
+        2481,
+        2483,
+        2492,
+        2493,
+        2495,
+        2496,
+        2498,
+        2507,
+        2509,
+        2510,
+        2512,
+        2516,
+        2517,
+        2518,
+        2519,
+        2523,
+        2524,
+        2527,
+        2529,
+        2533,
+        2534,
+        2541,
+        2545,
+        2546,
+        2547,
+        2548,
+        2549,
+        2551,
+        2553,
+        2555,
+        2556,
+        2558,
+        2559,
+        2560,
+        2563,
+        2570,
+        2573,
+        2575,
+        2578,
+        2580,
+        2582,
+        2585,
+        2588,
+        2589
+      ],
+      "tasks": [
+        {
+          "id": 2313,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_1",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2312,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2316,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_12",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2315,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2328,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_25",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2327,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2329,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_26",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2328,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2333,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_3",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2332,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2336,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_33",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2335,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2340,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_38",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2339,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2344,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_43",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2343,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2349,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_49",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2348,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2350,
+          "name": "open_the_middle_drawer_of_the_cabinet_light_5",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2349,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 2360,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_14",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2359,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2361,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_15",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2360,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2363,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_17",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2362,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2364,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_18",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2363,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2365,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_19",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2364,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2369,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_22",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2368,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2374,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_27",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2373,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2375,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_28",
+          "category": "Light Conditions",
+          "difficulty_level": 4,
+          "task_id": 2374,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2379,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_31",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2378,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2384,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_36",
+          "category": "Light Conditions",
+          "difficulty_level": 4,
+          "task_id": 2383,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2386,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_38",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2385,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2387,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_39",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2386,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2388,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_4",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2387,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2390,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_41",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2389,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2393,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_44",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2392,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2394,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_45",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2393,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2396,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_47",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2395,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2398,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_49",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2397,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2403,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_light_8",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2402,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 2411,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_19",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2410,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2415,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_23",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2414,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2424,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_33",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2423,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2426,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_35",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2425,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2427,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_36",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2426,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2435,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_43",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2434,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2438,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_48",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2437,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2439,
+          "name": "push_the_plate_to_the_front_of_the_stove_light_50",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2438,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2441,
+          "name": "put_the_bowl_on_the_plate_light_1",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2440,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2443,
+          "name": "put_the_bowl_on_the_plate_light_13",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2442,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2445,
+          "name": "put_the_bowl_on_the_plate_light_16",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2444,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2446,
+          "name": "put_the_bowl_on_the_plate_light_18",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2445,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2451,
+          "name": "put_the_bowl_on_the_plate_light_27",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2450,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2452,
+          "name": "put_the_bowl_on_the_plate_light_29",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2451,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2453,
+          "name": "put_the_bowl_on_the_plate_light_34",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2452,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2454,
+          "name": "put_the_bowl_on_the_plate_light_35",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2453,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2457,
+          "name": "put_the_bowl_on_the_plate_light_38",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2456,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2458,
+          "name": "put_the_bowl_on_the_plate_light_39",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2457,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2460,
+          "name": "put_the_bowl_on_the_plate_light_40",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2459,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2463,
+          "name": "put_the_bowl_on_the_plate_light_49",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2462,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2465,
+          "name": "put_the_bowl_on_the_plate_light_7",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2464,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2467,
+          "name": "put_the_bowl_on_the_stove_light_11",
+          "category": "Light Conditions",
+          "difficulty_level": 4,
+          "task_id": 2466,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2468,
+          "name": "put_the_bowl_on_the_stove_light_15",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2467,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2469,
+          "name": "put_the_bowl_on_the_stove_light_24",
+          "category": "Light Conditions",
+          "difficulty_level": 4,
+          "task_id": 2468,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2471,
+          "name": "put_the_bowl_on_top_of_the_cabinet_light_10",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2470,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2473,
+          "name": "put_the_bowl_on_top_of_the_cabinet_light_2",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2472,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2476,
+          "name": "put_the_bowl_on_top_of_the_cabinet_light_38",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2475,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2482,
+          "name": "put_the_bowl_on_top_of_the_cabinet_light_6",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2481,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2484,
+          "name": "put_the_cream_cheese_in_the_bowl_light_1",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2483,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2493,
+          "name": "put_the_cream_cheese_in_the_bowl_light_27",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2492,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2494,
+          "name": "put_the_cream_cheese_in_the_bowl_light_30",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2493,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2496,
+          "name": "put_the_cream_cheese_in_the_bowl_light_37",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2495,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2497,
+          "name": "put_the_cream_cheese_in_the_bowl_light_38",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2496,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2499,
+          "name": "put_the_cream_cheese_in_the_bowl_light_41",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2498,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2508,
+          "name": "put_the_cream_cheese_in_the_bowl_light_8",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2507,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2510,
+          "name": "put_the_wine_bottle_on_the_rack_light_11",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2509,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2511,
+          "name": "put_the_wine_bottle_on_the_rack_light_12",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2510,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2513,
+          "name": "put_the_wine_bottle_on_the_rack_light_15",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2512,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2517,
+          "name": "put_the_wine_bottle_on_the_rack_light_19",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2516,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2518,
+          "name": "put_the_wine_bottle_on_the_rack_light_2",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2517,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2519,
+          "name": "put_the_wine_bottle_on_the_rack_light_20",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2518,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2520,
+          "name": "put_the_wine_bottle_on_the_rack_light_21",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2519,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2524,
+          "name": "put_the_wine_bottle_on_the_rack_light_26",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2523,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2525,
+          "name": "put_the_wine_bottle_on_the_rack_light_27",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2524,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2528,
+          "name": "put_the_wine_bottle_on_the_rack_light_31",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2527,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2530,
+          "name": "put_the_wine_bottle_on_the_rack_light_35",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2529,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2534,
+          "name": "put_the_wine_bottle_on_the_rack_light_43",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2533,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2535,
+          "name": "put_the_wine_bottle_on_the_rack_light_44",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2534,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2542,
+          "name": "put_the_wine_bottle_on_the_rack_light_8",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2541,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2546,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_14",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2545,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2547,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_15",
+          "category": "Light Conditions",
+          "difficulty_level": 4,
+          "task_id": 2546,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2548,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_18",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2547,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2549,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_19",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2548,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2550,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_2",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2549,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2552,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_22",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2551,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2554,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_3",
+          "category": "Light Conditions",
+          "difficulty_level": 5,
+          "task_id": 2553,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2556,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_32",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2555,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2557,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_33",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2556,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2559,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_35",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2558,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2560,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_36",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2559,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2561,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_37",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2560,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2564,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_light_40",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2563,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2571,
+          "name": "turn_on_the_stove_light_1",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2570,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2574,
+          "name": "turn_on_the_stove_light_13",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2573,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2576,
+          "name": "turn_on_the_stove_light_19",
+          "category": "Light Conditions",
+          "difficulty_level": 1,
+          "task_id": 2575,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2579,
+          "name": "turn_on_the_stove_light_22",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2578,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2581,
+          "name": "turn_on_the_stove_light_24",
+          "category": "Light Conditions",
+          "difficulty_level": 3,
+          "task_id": 2580,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2583,
+          "name": "turn_on_the_stove_light_28",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2582,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2586,
+          "name": "turn_on_the_stove_light_32",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2585,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2589,
+          "name": "turn_on_the_stove_light_41",
+          "category": "Light Conditions",
+          "difficulty_level": null,
+          "task_id": 2588,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2590,
+          "name": "turn_on_the_stove_light_5",
+          "category": "Light Conditions",
+          "difficulty_level": 2,
+          "task_id": 2589,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        }
+      ],
+      "base_task_counts": {
+        "open_the_middle_drawer_of_the_cabinet": 10,
+        "open_the_top_drawer_and_put_the_bowl_inside": 19,
+        "push_the_plate_to_the_front_of_the_stove": 8,
+        "put_the_bowl_on_the_plate": 13,
+        "put_the_bowl_on_the_stove": 3,
+        "put_the_bowl_on_top_of_the_cabinet": 4,
+        "put_the_cream_cheese_in_the_bowl": 7,
+        "put_the_wine_bottle_on_the_rack": 14,
+        "put_the_wine_bottle_on_top_of_the_cabinet": 13,
+        "turn_on_the_stove": 9
+      },
+      "difficulty_counts": {
+        "2": 20,
+        "null": 41,
+        "1": 15,
+        "3": 10,
+        "4": 5,
+        "5": 9
+      }
+    },
+    "camera": {
+      "category": "Camera Viewpoints",
+      "available": 408,
+      "task_ids": [
+        690,
+        697,
+        706,
+        710,
+        721,
+        722,
+        725,
+        727,
+        731,
+        735,
+        736,
+        737,
+        738,
+        740,
+        741,
+        745,
+        753,
+        761,
+        762,
+        765,
+        784,
+        785,
+        786,
+        787,
+        794,
+        801,
+        803,
+        812,
+        813,
+        814,
+        818,
+        822,
+        823,
+        834,
+        837,
+        838,
+        839,
+        844,
+        845,
+        848,
+        851,
+        852,
+        853,
+        856,
+        859,
+        860,
+        871,
+        873,
+        887,
+        894,
+        897,
+        905,
+        912,
+        916,
+        917,
+        919,
+        931,
+        933,
+        934,
+        938,
+        940,
+        942,
+        948,
+        950,
+        951,
+        956,
+        962,
+        966,
+        968,
+        970,
+        972,
+        976,
+        980,
+        984,
+        988,
+        990,
+        995,
+        998,
+        1002,
+        1003,
+        1006,
+        1010,
+        1017,
+        1021,
+        1031,
+        1032,
+        1040,
+        1042,
+        1051,
+        1053,
+        1057,
+        1058,
+        1063,
+        1074,
+        1075,
+        1076,
+        1078,
+        1083,
+        1088,
+        1097
+      ],
+      "tasks": [
+        {
+          "id": 691,
+          "name": "open_the_middle_drawer_of_the_cabinet_view_0_0_100_2_4_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 690,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 698,
+          "name": "open_the_middle_drawer_of_the_cabinet_view_1_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 697,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 707,
+          "name": "open_the_middle_drawer_of_the_cabinet_view_11_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 706,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 711,
+          "name": "open_the_middle_drawer_of_the_cabinet_view_15_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 710,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 722,
+          "name": "put_the_bowl_on_the_stove_view_18_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 721,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 723,
+          "name": "put_the_bowl_on_the_stove_view_18_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 722,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 726,
+          "name": "put_the_bowl_on_the_stove_view_20_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 725,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 728,
+          "name": "put_the_bowl_on_the_stove_view_22_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 727,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 732,
+          "name": "put_the_bowl_on_the_stove_view_24_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 731,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 736,
+          "name": "put_the_bowl_on_the_stove_view_26_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 735,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 737,
+          "name": "put_the_bowl_on_the_stove_view_27_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 736,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 738,
+          "name": "put_the_bowl_on_the_stove_view_28_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 737,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 739,
+          "name": "put_the_bowl_on_the_stove_view_28_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 738,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 741,
+          "name": "put_the_bowl_on_the_stove_view_29_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 740,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 742,
+          "name": "put_the_bowl_on_the_stove_view_30_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 741,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 746,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_view_0_0_126_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 745,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 754,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_view_31_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 753,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 762,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_view_35_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 761,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 763,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_view_35_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 762,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 766,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_view_37_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 765,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 785,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_0_0_132_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 784,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 786,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_0_0_133_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 785,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 787,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_0_0_134_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 786,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 788,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_0_0_136_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 787,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 795,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_0_0_100_8_8_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 794,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 802,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_46_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 801,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 804,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_47_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 803,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 813,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_51_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 812,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 814,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_52_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 813,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 815,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_52_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 814,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 819,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_54_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 818,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 823,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_56_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 822,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 824,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_view_57_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 823,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 835,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_144_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 834,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 838,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_147_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 837,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 839,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_148_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 838,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 840,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_149_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 839,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 845,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_100_10_8_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 844,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 846,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_100_10_10_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 845,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 849,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_0_0_100_10_354_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 848,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 852,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_61_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 851,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 853,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_61_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 852,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 854,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_62_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 853,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 857,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_63_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 856,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 860,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_65_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 859,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 861,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_65_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 860,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 872,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_71_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 871,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 874,
+          "name": "put_the_bowl_on_top_of_the_cabinet_view_72_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 873,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 888,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_0_0_157_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 887,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 895,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_0_0_100_350_10_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 894,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 898,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_0_0_100_350_354_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 897,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 906,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_287_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 905,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 913,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_291_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 912,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 917,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_293_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 916,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 918,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_293_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 917,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 920,
+          "name": "push_the_plate_to_the_front_of_the_stove_view_294_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 919,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 932,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_162_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 931,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 934,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_164_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 933,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 935,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_165_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 934,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 939,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_169_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 938,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 941,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_100_352_2_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 940,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 943,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_100_352_6_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 942,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 949,
+          "name": "put_the_cream_cheese_in_the_bowl_view_0_0_100_352_356_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 948,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 951,
+          "name": "put_the_cream_cheese_in_the_bowl_view_300_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 950,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 952,
+          "name": "put_the_cream_cheese_in_the_bowl_view_300_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 951,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 957,
+          "name": "put_the_cream_cheese_in_the_bowl_view_303_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 956,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 963,
+          "name": "put_the_cream_cheese_in_the_bowl_view_306_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 5,
+          "task_id": 962,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 967,
+          "name": "put_the_cream_cheese_in_the_bowl_view_308_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 966,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 969,
+          "name": "put_the_cream_cheese_in_the_bowl_view_309_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 968,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 971,
+          "name": "put_the_cream_cheese_in_the_bowl_view_310_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 970,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 973,
+          "name": "put_the_cream_cheese_in_the_bowl_view_311_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 972,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 977,
+          "name": "put_the_cream_cheese_in_the_bowl_view_313_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 976,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 981,
+          "name": "turn_on_the_stove_view_0_0_172_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 980,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 985,
+          "name": "turn_on_the_stove_view_0_0_176_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 984,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 989,
+          "name": "turn_on_the_stove_view_0_0_180_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 988,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 991,
+          "name": "turn_on_the_stove_view_0_0_100_354_8_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 990,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 996,
+          "name": "turn_on_the_stove_view_315_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 995,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 999,
+          "name": "turn_on_the_stove_view_316_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 998,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1003,
+          "name": "turn_on_the_stove_view_318_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1002,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1004,
+          "name": "turn_on_the_stove_view_319_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1003,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1007,
+          "name": "turn_on_the_stove_view_320_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1006,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1011,
+          "name": "turn_on_the_stove_view_322_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1010,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1018,
+          "name": "turn_on_the_stove_view_326_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1017,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1022,
+          "name": "turn_on_the_stove_view_328_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 1021,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 1032,
+          "name": "put_the_bowl_on_the_plate_view_0_0_187_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 1031,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1033,
+          "name": "put_the_bowl_on_the_plate_view_0_0_188_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1032,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1041,
+          "name": "put_the_bowl_on_the_plate_view_332_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1040,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1043,
+          "name": "put_the_bowl_on_the_plate_view_334_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1042,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1052,
+          "name": "put_the_bowl_on_the_plate_view_340_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1051,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1054,
+          "name": "put_the_bowl_on_the_plate_view_342_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1053,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 1058,
+          "name": "put_the_wine_bottle_on_the_rack_view_0_0_192_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 1057,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1059,
+          "name": "put_the_wine_bottle_on_the_rack_view_0_0_193_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 1058,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1064,
+          "name": "put_the_wine_bottle_on_the_rack_view_0_0_198_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 4,
+          "task_id": 1063,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1075,
+          "name": "put_the_wine_bottle_on_the_rack_view_0_0_100_358_358_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 1074,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1076,
+          "name": "put_the_wine_bottle_on_the_rack_view_345_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1075,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1077,
+          "name": "put_the_wine_bottle_on_the_rack_view_345_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1076,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1079,
+          "name": "put_the_wine_bottle_on_the_rack_view_346_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1078,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1084,
+          "name": "put_the_wine_bottle_on_the_rack_view_349_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 1,
+          "task_id": 1083,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1089,
+          "name": "put_the_wine_bottle_on_the_rack_view_352_0_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 2,
+          "task_id": 1088,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 1098,
+          "name": "put_the_wine_bottle_on_the_rack_view_359_15_100_0_0_initstate_0",
+          "category": "Camera Viewpoints",
+          "difficulty_level": 3,
+          "task_id": 1097,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        }
+      ],
+      "base_task_counts": {
+        "open_the_middle_drawer_of_the_cabinet": 4,
+        "put_the_bowl_on_the_stove": 11,
+        "put_the_wine_bottle_on_top_of_the_cabinet": 5,
+        "open_the_top_drawer_and_put_the_bowl_inside": 13,
+        "put_the_bowl_on_top_of_the_cabinet": 15,
+        "push_the_plate_to_the_front_of_the_stove": 8,
+        "put_the_cream_cheese_in_the_bowl": 16,
+        "turn_on_the_stove": 12,
+        "put_the_bowl_on_the_plate": 6,
+        "put_the_wine_bottle_on_the_rack": 10
+      },
+      "difficulty_counts": {
+        "2": 35,
+        "4": 18,
+        "1": 10,
+        "3": 21,
+        "5": 16
+      }
+    },
+    "layout": {
+      "category": "Objects Layout",
+      "available": 425,
+      "task_ids": [
+        1887,
+        1894,
+        1903,
+        1907,
+        1918,
+        1919,
+        1924,
+        1928,
+        1933,
+        1934,
+        1935,
+        1937,
+        1938,
+        1942,
+        1950,
+        1958,
+        1959,
+        1962,
+        1981,
+        1982,
+        1983,
+        1984,
+        1991,
+        1998,
+        2000,
+        2009,
+        2010,
+        2011,
+        2015,
+        2019,
+        2020,
+        2031,
+        2034,
+        2035,
+        2036,
+        2041,
+        2042,
+        2045,
+        2048,
+        2049,
+        2050,
+        2053,
+        2056,
+        2057,
+        2068,
+        2070,
+        2084,
+        2091,
+        2094,
+        2102,
+        2109,
+        2113,
+        2114,
+        2116,
+        2128,
+        2131,
+        2135,
+        2137,
+        2139,
+        2145,
+        2147,
+        2148,
+        2153,
+        2159,
+        2163,
+        2165,
+        2167,
+        2169,
+        2173,
+        2177,
+        2181,
+        2185,
+        2187,
+        2192,
+        2195,
+        2199,
+        2200,
+        2203,
+        2207,
+        2214,
+        2229,
+        2231,
+        2237,
+        2241,
+        2247,
+        2248,
+        2250,
+        2253,
+        2255,
+        2260,
+        2264,
+        2270,
+        2271,
+        2273,
+        2275,
+        2287,
+        2288,
+        2296,
+        2301,
+        2311
+      ],
+      "tasks": [
+        {
+          "id": 1888,
+          "name": "open_the_middle_drawer_of_the_cabinet_add_10",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 1887,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1895,
+          "name": "open_the_middle_drawer_of_the_cabinet_add_18",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 1894,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1904,
+          "name": "open_the_middle_drawer_of_the_cabinet_add_26",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1903,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1908,
+          "name": "open_the_middle_drawer_of_the_cabinet_add_30",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1907,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1919,
+          "name": "open_the_middle_drawer_of_the_cabinet_moved_level2_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 1918,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1920,
+          "name": "open_the_middle_drawer_of_the_cabinet_moved_level3_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 1919,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1925,
+          "name": "open_the_middle_drawer_of_the_cabinet_moved_level4_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1924,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1929,
+          "name": "open_the_middle_drawer_of_the_cabinet_moved_level5_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 1928,
+          "base_task": "open_the_middle_drawer_of_the_cabinet",
+          "prompt": "open the middle drawer of the cabinet"
+        },
+        {
+          "id": 1934,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_13",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1933,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1935,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_14",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 1934,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1936,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_15",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1935,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1938,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_17",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1937,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1939,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_18",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1938,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1943,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1942,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1951,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_add_3",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1950,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1959,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_moved_level1_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1958,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1960,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_moved_level1_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1959,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1963,
+          "name": "open_the_top_drawer_and_put_the_bowl_inside_moved_level2_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 1962,
+          "base_task": "open_the_top_drawer_and_put_the_bowl_inside",
+          "prompt": "open the top drawer and put the bowl inside"
+        },
+        {
+          "id": 1982,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_15",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1981,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 1983,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_16",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1982,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 1984,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_17",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 1983,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 1985,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_18",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1984,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 1992,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_25",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 1991,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 1999,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_5",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 1998,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2001,
+          "name": "push_the_plate_to_the_front_of_the_stove_add_7",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2000,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2010,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level2_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2009,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2011,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level3_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2010,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2012,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level3_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2011,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2016,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level4_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2015,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2020,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level5_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2019,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2021,
+          "name": "push_the_plate_to_the_front_of_the_stove_moved_level5_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2020,
+          "base_task": "push_the_plate_to_the_front_of_the_stove",
+          "prompt": "push the plate to the front of the stove"
+        },
+        {
+          "id": 2032,
+          "name": "put_the_bowl_on_the_plate_add_19",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2031,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2035,
+          "name": "put_the_bowl_on_the_plate_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2034,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2036,
+          "name": "put_the_bowl_on_the_plate_add_23",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2035,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2037,
+          "name": "put_the_bowl_on_the_plate_add_24",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2036,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2042,
+          "name": "put_the_bowl_on_the_plate_add_29",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2041,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2043,
+          "name": "put_the_bowl_on_the_plate_add_3",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2042,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2046,
+          "name": "put_the_bowl_on_the_plate_add_5",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2045,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2049,
+          "name": "put_the_bowl_on_the_plate_moved_level1_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2048,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2050,
+          "name": "put_the_bowl_on_the_plate_moved_level1_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2049,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2051,
+          "name": "put_the_bowl_on_the_plate_moved_level1_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2050,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2054,
+          "name": "put_the_bowl_on_the_plate_moved_level2_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2053,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2057,
+          "name": "put_the_bowl_on_the_plate_moved_level3_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2056,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2058,
+          "name": "put_the_bowl_on_the_plate_moved_level3_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2057,
+          "base_task": "put_the_bowl_on_the_plate",
+          "prompt": "put the bowl on the plate"
+        },
+        {
+          "id": 2069,
+          "name": "put_the_bowl_on_the_stove_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2068,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2071,
+          "name": "put_the_bowl_on_the_stove_add_25",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2070,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2085,
+          "name": "put_the_bowl_on_the_stove_moved_level3_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2084,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2092,
+          "name": "put_the_bowl_on_the_stove_moved_level5_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2091,
+          "base_task": "put_the_bowl_on_the_stove",
+          "prompt": "put the bowl on the stove"
+        },
+        {
+          "id": 2095,
+          "name": "put_the_bowl_on_top_of_the_cabinet_add_10",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2094,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2103,
+          "name": "put_the_bowl_on_top_of_the_cabinet_add_23",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2102,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2110,
+          "name": "put_the_bowl_on_top_of_the_cabinet_add_30",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2109,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2114,
+          "name": "put_the_bowl_on_top_of_the_cabinet_moved_level1_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2113,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2115,
+          "name": "put_the_bowl_on_top_of_the_cabinet_moved_level2_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2114,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2117,
+          "name": "put_the_bowl_on_top_of_the_cabinet_moved_level2_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2116,
+          "base_task": "put_the_bowl_on_top_of_the_cabinet",
+          "prompt": "put the bowl on top of the cabinet"
+        },
+        {
+          "id": 2129,
+          "name": "put_the_cream_cheese_in_the_bowl_add_10",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2128,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2132,
+          "name": "put_the_cream_cheese_in_the_bowl_add_13",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2131,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2136,
+          "name": "put_the_cream_cheese_in_the_bowl_add_18",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2135,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2138,
+          "name": "put_the_cream_cheese_in_the_bowl_add_20",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2137,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2140,
+          "name": "put_the_cream_cheese_in_the_bowl_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2139,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2146,
+          "name": "put_the_cream_cheese_in_the_bowl_add_28",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2145,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2148,
+          "name": "put_the_cream_cheese_in_the_bowl_add_3",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2147,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2149,
+          "name": "put_the_cream_cheese_in_the_bowl_add_30",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2148,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2154,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level1_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2153,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2160,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level2_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2159,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2164,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level3_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2163,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2166,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level4_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2165,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2168,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level5_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2167,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2170,
+          "name": "put_the_cream_cheese_in_the_bowl_moved_level5_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2169,
+          "base_task": "put_the_cream_cheese_in_the_bowl",
+          "prompt": "put the cream cheese in the bowl"
+        },
+        {
+          "id": 2174,
+          "name": "put_the_wine_bottle_on_the_rack_add_11",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2173,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2178,
+          "name": "put_the_wine_bottle_on_the_rack_add_15",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2177,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2182,
+          "name": "put_the_wine_bottle_on_the_rack_add_19",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2181,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2186,
+          "name": "put_the_wine_bottle_on_the_rack_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2185,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2188,
+          "name": "put_the_wine_bottle_on_the_rack_add_24",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2187,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2193,
+          "name": "put_the_wine_bottle_on_the_rack_add_29",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2192,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2196,
+          "name": "put_the_wine_bottle_on_the_rack_add_4",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2195,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2200,
+          "name": "put_the_wine_bottle_on_the_rack_add_8",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2199,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2201,
+          "name": "put_the_wine_bottle_on_the_rack_add_9",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2200,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2204,
+          "name": "put_the_wine_bottle_on_the_rack_moved_level1_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2203,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2208,
+          "name": "put_the_wine_bottle_on_the_rack_moved_level2_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 4,
+          "task_id": 2207,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2215,
+          "name": "put_the_wine_bottle_on_the_rack_moved_level4_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2214,
+          "base_task": "put_the_wine_bottle_on_the_rack",
+          "prompt": "put the wine bottle on the rack"
+        },
+        {
+          "id": 2230,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_add_20",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2229,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2232,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_add_22",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2231,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2238,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_add_29",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2237,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2242,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_add_6",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2241,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2248,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level1_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2247,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2249,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level1_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2248,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2251,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level2_sample2",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2250,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2254,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level3_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2253,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2256,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level3_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2255,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2261,
+          "name": "put_the_wine_bottle_on_top_of_the_cabinet_moved_level4_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2260,
+          "base_task": "put_the_wine_bottle_on_top_of_the_cabinet",
+          "prompt": "put the wine bottle on top of the cabinet"
+        },
+        {
+          "id": 2265,
+          "name": "turn_on_the_stove_add_1",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2264,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2271,
+          "name": "turn_on_the_stove_add_15",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2270,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2272,
+          "name": "turn_on_the_stove_add_16",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2271,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2274,
+          "name": "turn_on_the_stove_add_18",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2273,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2276,
+          "name": "turn_on_the_stove_add_2",
+          "category": "Objects Layout",
+          "difficulty_level": 2,
+          "task_id": 2275,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2288,
+          "name": "turn_on_the_stove_add_30",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2287,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2289,
+          "name": "turn_on_the_stove_add_4",
+          "category": "Objects Layout",
+          "difficulty_level": 1,
+          "task_id": 2288,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2297,
+          "name": "turn_on_the_stove_moved_level1_sample3",
+          "category": "Objects Layout",
+          "difficulty_level": 3,
+          "task_id": 2296,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2302,
+          "name": "turn_on_the_stove_moved_level3_sample1",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2301,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        },
+        {
+          "id": 2312,
+          "name": "turn_on_the_stove_moved_level5_sample4",
+          "category": "Objects Layout",
+          "difficulty_level": 5,
+          "task_id": 2311,
+          "base_task": "turn_on_the_stove",
+          "prompt": "turn on the stove"
+        }
+      ],
+      "base_task_counts": {
+        "open_the_middle_drawer_of_the_cabinet": 8,
+        "open_the_top_drawer_and_put_the_bowl_inside": 10,
+        "push_the_plate_to_the_front_of_the_stove": 13,
+        "put_the_bowl_on_the_plate": 13,
+        "put_the_bowl_on_the_stove": 4,
+        "put_the_bowl_on_top_of_the_cabinet": 6,
+        "put_the_cream_cheese_in_the_bowl": 14,
+        "put_the_wine_bottle_on_the_rack": 12,
+        "put_the_wine_bottle_on_top_of_the_cabinet": 10,
+        "turn_on_the_stove": 10
+      },
+      "difficulty_counts": {
+        "1": 27,
+        "2": 29,
+        "4": 14,
+        "3": 14,
+        "5": 16
+      }
+    }
+  }
+}

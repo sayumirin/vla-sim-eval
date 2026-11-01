@@ -1,0 +1,55 @@
+Experiment 4: ACT data-scaling curve
+
+15 models, each trained from scratch for 6,000 updates and evaluated on the same 50 test cases: 750 formal outcomes.
+Model: ACT (ImageNet ResNet18 initialization). Task: AlohaTransferCube-v0. At most 5 A10 GPUs in parallel.
+
+demos | seed 0 | seed 1 | seed 2 | mean success | descriptive bootstrap 95% interval
+    5 |  12.0% |  34.0% |  22.0% |        22.7% | 9.3%–38.0%
+   10 |  56.0% |  36.0% |  48.0% |        46.7% | 31.3%–62.0%
+   20 |  78.0% |  80.0% |  48.0% |        68.7% | 48.0%–86.0%
+   35 |  94.0% |  86.0% |  88.0% |        89.3% | 80.0%–97.3%
+   50 |  84.0% |  86.0% |  90.0% |        86.7% | 77.3%–94.7%
+
+Observed mean difference between 50 and 5 demonstrations: 64.0 percentage points.
+This is a descriptive comparison at a fixed training budget. It cannot establish where the curve plateaus
+or how many real-robot demonstrations would be needed.
+Figure: left, mean with two-way bootstrap interval; right, each model with its Wilson 95% interval.
+Models share test cases, so the 150 outcomes per demonstration count are not pooled into one Wilson interval.
+
+Checks: all 15 final checkpoint hashes differ; demonstration subsets, frame counts and normalization sample counts
+are correct; every run reached 6,000 updates with finite logged loss; all 750 test-case IDs are present;
+per-episode outcomes match the official aggregates.
+An audit replay of the same checkpoint and seed differed from the first evaluation in 3/750 success outcomes
+and 51/750 step counts. All success rates here use the first formal evaluation; replays are stored
+separately and were never used to select results or counted as extra samples.
+Initial qpos of the 50 test cases match within 1e-8 across all 15 replays. These poses are reconstructed from
+same-seed replays, not logged by the first run; initial_qpos_source in the merged records says so.
+The formal evaluation saved videos of the first two test cases per model (30 in total); replays have their own.
+
+Pilot: separate training seed 777 and test seeds 20000-20019; 2k/4k/6k updates gave 10/20, 16/20, 19/20.
+Formal training seeds 0/1/2, test cases 10000-10049. Neither the pilot nor the replays add formal samples.
+The shared update count was frozen before formal training; only final checkpoints were evaluated.
+
+Logging fix: the original records overwrote the initial pose at SAME_STEP autoresets. The original data is kept;
+only the pose-logging point changed, replaying the same checkpoint on the same test cases. Training and the
+official rollout are unchanged.
+
+Repeatability limit: the official evaluator enables cuDNN benchmark and strict determinism was not enforced.
+Replays of the same weights and seed differ slightly; the numerical source was not fully isolated. The
+difference is reported separately and is not modelled by the bootstrap interval.
+
+Infrastructure rerun: the original N=20, seed=2 instance ran about twice as slow and would have exceeded its
+time limit. It was stopped before any evaluation, its logs kept, and the same configuration and seed rerun on
+a fresh A10. 15 complete models plus 1 incomplete attempt; the incomplete attempt is not scored as 0 and no
+rerun was chosen by evaluation outcome.
+
+Conservative resource estimate for this experiment: $9.40 in total; formal training and first evaluation
+$5.09, audit replay $2.05. Includes speed tests, debugging, the pilot and retained cancelled
+reservations. Not a Modal invoice; CPU builds, storage and transfer are extra. Budget ceiling $15.
+
+Limitations: 3 training seeds; one nested subset chain; the bootstrap can be too narrow near 0% or 100%;
+6,000 fixed updates do not guarantee every group has converged; scripted demonstrations in simulation do not
+transfer directly to human teleoperation or real hardware.
+
+Files: summary.csv, per_model.csv, episodes.jsonl, audit.json, statistics.json, data_scaling.png/svg/pdf.
+Code, exact configuration and reproduction notes: ../README.md.

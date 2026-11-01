@@ -1,0 +1,225 @@
+{
+  "protocol_version": 2,
+  "suite": "libero_goal",
+  "seed": 0,
+  "episodes_per_task": 10,
+  "conditions": [
+    "C0_original",
+    "C1_paraphrase",
+    "C2_swap",
+    "C3_empty",
+    "C4_unrelated"
+  ],
+  "model_repo": "lerobot/pi05_libero_finetuned_v044",
+  "model_revision": "7152f13e34c6c115d808aea0e5d08aca74eac14b",
+  "lerobot_commit": "72e1d9e5e76ee719bacfc78bc34d817bee5fb521",
+  "paraphrase_source": {
+    "source_repo": "https://github.com/Zxy-MLlab/LIBERO-PRO",
+    "source_revision": "eafdb809426b13153aa1e4c42d6601844217dfec",
+    "source_file": "libero_ood/ood_language.yaml",
+    "source_sha256": "b06a52bd25860b401114d4c8bff93e7f0747379813c1aa2c11aa0904cd890c8f",
+    "selection_rule": "First published paraphrase per original task, fixed before evaluation.",
+    "paraphrases": {
+      "open_the_middle_drawer_of_the_cabinet": "open the cabinet’s middle drawer",
+      "put_the_cream_cheese_in_the_bowl": "place the cream cheese inside the bowl",
+      "open_the_top_drawer_and_put_the_bowl_inside": "slide open the top drawer and place the bowl in it",
+      "put_the_wine_bottle_on_the_rack": "place the wine bottle on the rack",
+      "push_the_plate_to_the_front_of_the_stove": "move the plate to the stove’s front",
+      "put_the_wine_bottle_on_top_of_the_cabinet": "place the wine bottle on top of the cabinet",
+      "put_the_bowl_on_the_plate": "place the bowl on top of the plate",
+      "put_the_bowl_on_the_stove": "place the bowl on the stove",
+      "turn_on_the_stove": "switch on the stove",
+      "put_the_bowl_on_top_of_the_cabinet": "place the bowl on top of the cabinet"
+    },
+    "all_candidates": {
+      "open_the_middle_drawer_of_the_cabinet": [
+        "open the cabinet’s middle drawer",
+        "pull the middle drawer of the cabinet",
+        "slide out the middle drawer"
+      ],
+      "put_the_cream_cheese_in_the_bowl": [
+        "place the cream cheese inside the bowl",
+        "put the cream cheese into the bowl",
+        "drop the cream cheese in the bowl"
+      ],
+      "open_the_top_drawer_and_put_the_bowl_inside": [
+        "slide open the top drawer and place the bowl in it",
+        "put the bowl inside the top drawer after opening it",
+        "open the cabinet’s top drawer and insert the bowl"
+      ],
+      "put_the_wine_bottle_on_the_rack": [
+        "place the wine bottle on the rack",
+        "put the wine bottle onto the rack",
+        "set the wine bottle down on the rack"
+      ],
+      "push_the_plate_to_the_front_of_the_stove": [
+        "move the plate to the stove’s front",
+        "push the plate forward to the stove",
+        "slide the plate toward the front of the stove"
+      ],
+      "put_the_wine_bottle_on_top_of_the_cabinet": [
+        "place the wine bottle on top of the cabinet",
+        "put the wine bottle above the cabinet",
+        "set the wine bottle on the cabinet top"
+      ],
+      "put_the_bowl_on_the_plate": [
+        "place the bowl on top of the plate",
+        "put the bowl onto the plate",
+        "set the bowl down on the plate"
+      ],
+      "put_the_bowl_on_the_stove": [
+        "place the bowl on the stove",
+        "put the bowl onto the stove",
+        "set the bowl down on the stove"
+      ],
+      "turn_on_the_stove": [
+        "switch on the stove",
+        "turn the stove on",
+        "ignite the stove"
+      ],
+      "put_the_bowl_on_top_of_the_cabinet": [
+        "place the bowl on top of the cabinet",
+        "put the bowl above the cabinet",
+        "set the bowl down on the cabinet top"
+      ]
+    }
+  },
+  "tasks": [
+    {
+      "task_id": 0,
+      "name": "open_the_middle_drawer_of_the_cabinet",
+      "swap_target_task_id": 1,
+      "swap_target_name": "put_the_bowl_on_the_stove",
+      "instructions": {
+        "C0_original": "open the middle drawer of the cabinet",
+        "C1_paraphrase": "open the cabinet’s middle drawer",
+        "C2_swap": "put the bowl on the stove",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 1,
+      "name": "put_the_bowl_on_the_stove",
+      "swap_target_task_id": 2,
+      "swap_target_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "instructions": {
+        "C0_original": "put the bowl on the stove",
+        "C1_paraphrase": "place the bowl on the stove",
+        "C2_swap": "put the wine bottle on top of the cabinet",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 2,
+      "name": "put_the_wine_bottle_on_top_of_the_cabinet",
+      "swap_target_task_id": 3,
+      "swap_target_name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "instructions": {
+        "C0_original": "put the wine bottle on top of the cabinet",
+        "C1_paraphrase": "place the wine bottle on top of the cabinet",
+        "C2_swap": "open the top drawer and put the bowl inside",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 3,
+      "name": "open_the_top_drawer_and_put_the_bowl_inside",
+      "swap_target_task_id": 4,
+      "swap_target_name": "put_the_bowl_on_top_of_the_cabinet",
+      "instructions": {
+        "C0_original": "open the top drawer and put the bowl inside",
+        "C1_paraphrase": "slide open the top drawer and place the bowl in it",
+        "C2_swap": "put the bowl on top of the cabinet",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 4,
+      "name": "put_the_bowl_on_top_of_the_cabinet",
+      "swap_target_task_id": 5,
+      "swap_target_name": "push_the_plate_to_the_front_of_the_stove",
+      "instructions": {
+        "C0_original": "put the bowl on top of the cabinet",
+        "C1_paraphrase": "place the bowl on top of the cabinet",
+        "C2_swap": "push the plate to the front of the stove",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 5,
+      "name": "push_the_plate_to_the_front_of_the_stove",
+      "swap_target_task_id": 6,
+      "swap_target_name": "put_the_cream_cheese_in_the_bowl",
+      "instructions": {
+        "C0_original": "push the plate to the front of the stove",
+        "C1_paraphrase": "move the plate to the stove’s front",
+        "C2_swap": "put the cream cheese in the bowl",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 6,
+      "name": "put_the_cream_cheese_in_the_bowl",
+      "swap_target_task_id": 7,
+      "swap_target_name": "turn_on_the_stove",
+      "instructions": {
+        "C0_original": "put the cream cheese in the bowl",
+        "C1_paraphrase": "place the cream cheese inside the bowl",
+        "C2_swap": "turn on the stove",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 7,
+      "name": "turn_on_the_stove",
+      "swap_target_task_id": 8,
+      "swap_target_name": "put_the_bowl_on_the_plate",
+      "instructions": {
+        "C0_original": "turn on the stove",
+        "C1_paraphrase": "switch on the stove",
+        "C2_swap": "put the bowl on the plate",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 8,
+      "name": "put_the_bowl_on_the_plate",
+      "swap_target_task_id": 9,
+      "swap_target_name": "put_the_wine_bottle_on_the_rack",
+      "instructions": {
+        "C0_original": "put the bowl on the plate",
+        "C1_paraphrase": "place the bowl on top of the plate",
+        "C2_swap": "put the wine bottle on the rack",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    },
+    {
+      "task_id": 9,
+      "name": "put_the_wine_bottle_on_the_rack",
+      "swap_target_task_id": 0,
+      "swap_target_name": "open_the_middle_drawer_of_the_cabinet",
+      "instructions": {
+        "C0_original": "put the wine bottle on the rack",
+        "C1_paraphrase": "place the wine bottle on the rack",
+        "C2_swap": "open the middle drawer of the cabinet",
+        "C3_empty": "",
+        "C4_unrelated": "The weather forecast predicts rain tomorrow."
+      }
+    }
+  ],
+  "pairing": "Exact supplied and settled simulator states and visual-model parameters; initial images checked within fixed rounding tolerance; restore C0 per-episode CPU/CUDA torch RNG states.",
+  "image_pair_tolerance": {
+    "max_abs_channel_difference": 1,
+    "max_fraction_different_channels": 0.001
+  },
+  "empty_instruction_definition": "Empty task text; keep PI05 fixed template and proprioceptive state tokens."
+}
