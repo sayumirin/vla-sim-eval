@@ -64,7 +64,7 @@ k = sum(r['success'] for r in records.values())
 info = {'per_task': tasks, 'overall': {'n_episodes': 100, 'n_success': k,
         'pc_success': float(k), 'pc_success_ci95': wilson(k,100)},
         'aggregation_note': 'Only episode success outcomes are aggregated. Rewards are not reconstructed.'}
-run = {**resumed, 'output': str(destination), 'status': 'completed_aggregate',
+run = {**resumed, 'output': destination.relative_to(ROOT).as_posix(), 'status': 'completed_aggregate',
        'aggregation_only': True, 'storage': 'local_aggregate',
        'command': None, 'gpu': None, 'cloud': None, 'region': None,
        'resume_source': None, 'resume_offsets': {}, 'preflight': None,

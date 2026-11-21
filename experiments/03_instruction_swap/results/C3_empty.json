@@ -236,7 +236,7 @@
   "config_sha256": "922c4cb1bc416660109fbd541b35274360a8731d6d5f750a1c0b55c42af70d60",
   "runner_sha256": "34f111758d72aec97207b9b7eb5a39daf01a344be85b8a0cdbc2bee423fca298",
   "reference": "/data/results_rq2/C0_original_100_seed0_20261030T190322Z",
-  "output": "/mnt/d/Study/workspace 26/Knightec VLA/stage3a/modal_results/C3_empty_100_seed0_20261030T200901Z",
+  "output": "modal_results/C3_empty_100_seed0_20261030T200901Z",
   "status": "completed_aggregate",
   "gpu": null,
   "torch": "2.11.0+cu130",
